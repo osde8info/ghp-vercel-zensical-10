@@ -1,6 +1,6 @@
 # 📦 Zensical Starter Template
 
-This is a ready-to-use Zensical template designed for quick deployment using **Github Pages** or **Cloudflare Workers**, with built-in support for **Dependabot** and **Dev Containers**.
+This is a ready-to-use Zensical template designed for quick deployment using **Github Pages** or **Cloudflare Workers**, with built-in support for **Dev Containers**.
 
 ## 🛠️ Setup Instructions
 
@@ -23,10 +23,10 @@ You can run and develop this project inside a fully configured Dev Container usi
 ### ▶️ Launch Dev Container
 
 1. Open this repository in VS Code
-2. Then follow the instructions for your OS:\
-•	macOS: Press Command + Shift + P → type Dev Containers: Reopen in Container → press Enter\
-•	Windows: Press Ctrl + Shift + P → type Dev Containers: Reopen in Container → press Enter
-4. VS Code will build the container and install all dependencies automatically
+1. Then follow the instructions for your OS:\
+• macOS: Press Command + Shift + P → type Dev Containers: Reopen in Container → press Enter\
+• Windows: Press Ctrl + Shift + P → type Dev Containers: Reopen in Container → press Enter
+1. VS Code will build the container and install all dependencies automatically
 
 Once inside the container, you can serve the site locally:
 
@@ -65,6 +65,7 @@ Your site will be available at `https://<username>.github.io/<repository-name>/`
 ### 🔧 How It Works
 
 The [docs.yml](.github/workflows/docs.yml) workflow:
+
 - Triggers on pushes to `master` or `main` branches
 - Installs Zensical and builds the site
 - Deploys the `site` directory to GitHub Pages

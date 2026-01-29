@@ -1,2 +1,8 @@
 .cache
+
+# mkdocs zensical
 site/
+
+# w2d
+export*.xml
+output/
