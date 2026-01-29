@@ -1,0 +1,1474 @@
+<!doctype html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.4",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseout","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),await this.T(),await this.F(),await this.j(),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise(t=>setTimeout(t,500-Date.now()+this.lastTouchEnd)),this.I(),this.H(),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))},{isRocket:!0})}o(){window.addEventListener("pageshow",t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0},{isRocket:!0}),window.addEventListener("pagehide",()=>{this.onFirstUserAction=null},{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",function i(o){o.changedTouches[0]&&t.changedTouches[0]&&Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}),"INPUT"===o.target.tagName&&"text"===o.target.type||(o.target.dispatchEvent(new TouchEvent("touchend",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new MouseEvent("mouseover",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1,clientX:o.changedTouches[0].clientX,clientY:o.changedTouches[0].clientY})),event.preventDefault()))},{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,t.composedPath&&t.composedPath()[0].getRootNode()instanceof ShadowRoot&&(t.rocketTarget=t.composedPath()[0]),this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach(t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.addEventListener("visibilitychange",this.userEventHandler,{isRocket:!0})}U(){this.userEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.removeEventListener("visibilitychange",this.userEventHandler,{isRocket:!0}),this.savedUserEvents.forEach(t=>{(t.rocketTarget||t.target).dispatchEvent(new window[t.constructor.name](t.type,t))})}m(){const t="return false",e=Array.from(this.attributeEvents,t=>"data-rocket-"+t),i="["+this.attributeEvents.join("],[")+"]",o="[data-rocket-"+this.attributeEvents.join("],[data-rocket-")+"]",s=(e,i,o)=>{o&&o!==t&&(e.setAttribute("data-rocket-"+i,o),e["rocket"+i]=new Function("event",o),e.setAttribute(i,t))};new MutationObserver(t=>{for(const n of t)"attributes"===n.type&&(n.attributeName.startsWith("data-rocket-")||this.everythingLoaded?n.attributeName.startsWith("data-rocket-")&&this.everythingLoaded&&this.N(n.target,n.attributeName.substring(12)):s(n.target,n.attributeName,n.target.getAttribute(n.attributeName))),"childList"===n.type&&n.addedNodes.forEach(t=>{if(t.nodeType===Node.ELEMENT_NODE)if(this.everythingLoaded)for(const i of[t,...t.querySelectorAll(o)])for(const t of i.getAttributeNames())e.includes(t)&&this.N(i,t.substring(12));else for(const e of[t,...t.querySelectorAll(i)])for(const t of e.getAttributeNames())this.attributeEvents.includes(t)&&s(e,t,e.getAttribute(t))})}).observe(document,{subtree:!0,childList:!0,attributeFilter:[...this.attributeEvents,...e]})}I(){this.attributeEvents.forEach(t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach(e=>{this.N(e,t)})})}N(t,e){const i=t.getAttribute("data-rocket-"+e);i&&(t.setAttribute(e,i),t.removeAttribute("data-rocket-"+e))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):(t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o}),"mouseenter"!==e&&"mouseleave"!==e||t.originalAddEventListener.call(this,e,t.savedUserEvents.push,o))},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}J(t,e){this.savedEventListeners=this.savedEventListeners.filter(i=>{let o=i.type,s=i.target||window;return e!==o||t!==s||(this.B(o,s)&&(i.type="rocket-"+o),this.$(i),!1)})}H(){EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener,this.savedEventListeners.forEach(t=>this.$(t))}$(t){t.remove?this.originalRemoveEventListener.call(t.target,t.type,t.func,t.options):this.originalAddEventListener.call(t.target,t.type,t.func,t.options)}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map(t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e})),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,()=>{e[t].forEach(t=>t())},{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout(()=>i.bind(document)(o)):i.bind(document)(o)}return"function"==typeof i&&(t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s)),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise(t=>{this.userActionTriggered?t():this.onFirstUserAction=t})}async L(){return new Promise(t=>{document.addEventListener("DOMContentLoaded",()=>{this.realDomReadyFired=!0,t()},{isRocket:!0})})}async j(){return this.realWindowLoadedFired?Promise.resolve():new Promise(t=>{window.addEventListener("load",t,{isRocket:!0})})}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver(t=>{for(const e of t)e.addedNodes.forEach(t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise(e=>{const i=()=>{const i=this.pendingScripts.findIndex(e=>e.script===t);i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)})})})}),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async F(){await this.X(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.F()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach(e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this.Y(t,"preconnect")}async G(t){if(await this.K(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise(e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))}),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",()=>{i.setAttribute("data-rocket-status","failed-network"),e()},{isRocket:!0}),setTimeout(()=>{i.isConnected||e()},1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.G(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())},{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}});t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.G(e),this.C(t)):Promise.resolve()}O(){this.Y([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}Y(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach(t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}}),document.head.appendChild(o)}W(){this.trash.forEach(t=>t.remove())}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(document,"DOMContentLoaded"),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.K(),this.J(window,"DOMContentLoaded"),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(window,"load"),window.dispatchEvent(new Event("rocket-load")),await this.K(),window.rocketonload&&window.rocketonload(),await this.K(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this.K(),this.J(window,"pageshow");const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.K(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async K(){Date.now()-this.lastBreath>45&&(await this.X(),this.lastBreath=Date.now())}async X(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="pingback" href="http://agiletv.com/xmlrpc.php" />
+	<!-- Google tag (gtag.js) consent mode dataLayer added by Site Kit -->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="google_gtagjs-js-consent-mode-data-layer">
+/* <![CDATA[ */
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {"ad_personalization":"denied","ad_storage":"denied","ad_user_data":"denied","analytics_storage":"denied","functionality_storage":"denied","security_storage":"denied","personalization_storage":"denied","region":["AT","BE","BG","CH","CY","CZ","DE","DK","EE","ES","FI","FR","GB","GR","HR","HU","IE","IS","IT","LI","LT","LU","LV","MT","NL","NO","PL","PT","RO","SE","SI","SK"],"wait_for_update":500});
+window._googlesitekitConsentCategoryMap = {"statistics":["analytics_storage"],"marketing":["ad_storage","ad_user_data","ad_personalization"],"functional":["functionality_storage","security_storage"],"preferences":["personalization_storage"]};
+window._googlesitekitConsents = {"ad_personalization":"denied","ad_storage":"denied","ad_user_data":"denied","analytics_storage":"denied","functionality_storage":"denied","security_storage":"denied","personalization_storage":"denied","region":["AT","BE","BG","CH","CY","CZ","DE","DK","EE","ES","FI","FR","GB","GR","HR","HU","IE","IS","IT","LI","LT","LU","LV","MT","NL","NO","PL","PT","RO","SE","SI","SK"],"wait_for_update":500};
+/* ]]> */
+</script>
+<!-- End Google tag (gtag.js) consent mode dataLayer added by Site Kit -->
+
+<!-- Search Engine Optimization by Rank Math PRO - https://rankmath.com/ -->
+<title>Fon Has Joined Agile TV - A New Chapter Begins - AgileTV</title>
+<link data-rocket-prefetch href="https://js-eu1.hsforms.net" rel="dns-prefetch">
+<link data-rocket-preload as="style" data-wpr-hosted-gf-parameters="family=Poppins%3A400%2C700&display=swap" href="https://agiletv.com/wp-content/cache/fonts/1/google-fonts/css/e/5/7/f4b66e959ecf93a794c990b24f259.css" rel="preload">
+<link crossorigin data-rocket-preload as="font" href="https://agiletv.com/wp-content/cache/fonts/1/google-fonts/fonts/s/poppins/v24/pxiEyp8kv8JHgFVrJJfecg.woff2" rel="preload">
+<link data-wpr-hosted-gf-parameters="family=Poppins%3A400%2C700&display=swap" href="https://agiletv.com/wp-content/cache/fonts/1/google-fonts/css/e/5/7/f4b66e959ecf93a794c990b24f259.css" media="print" onload="this.media=&#039;all&#039;" rel="stylesheet">
+<noscript data-wpr-hosted-gf-parameters=""><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins%3A400%2C700&#038;display=swap"></noscript><link rel="preload" data-rocket-preload as="image" href="https://agiletv.com/wp-content/uploads/2025/01/tv-as-a-service-video_rebranded_3_frame.jpg" fetchpriority="high">
+<meta name="description" content="Fon is now part of Agile TV. This move brings more innovation, scalability, and service to strengthen our TVaaS solutions."/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://agiletv.com/fon/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Fon Has Joined Agile TV - A New Chapter Begins - AgileTV" />
+<meta property="og:description" content="Fon is now part of Agile TV. This move brings more innovation, scalability, and service to strengthen our TVaaS solutions." />
+<meta property="og:url" content="https://agiletv.com/fon/" />
+<meta property="og:site_name" content="AgileTV" />
+<meta property="og:updated_time" content="2025-04-10T13:56:30+01:00" />
+<meta property="og:image" content="https://agiletv.com/wp-content/uploads/2025/03/Agile-Fon-Thumbnail-1024x478.png" />
+<meta property="og:image:secure_url" content="https://agiletv.com/wp-content/uploads/2025/03/Agile-Fon-Thumbnail-1024x478.png" />
+<meta property="og:image:width" content="640" />
+<meta property="og:image:height" content="299" />
+<meta property="og:image:alt" content="Fon &#8211; Redirection Page" />
+<meta property="og:image:type" content="image/png" />
+<meta property="article:published_time" content="2025-03-28T16:29:00+01:00" />
+<meta property="article:modified_time" content="2025-04-10T13:56:30+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Fon Has Joined Agile TV - A New Chapter Begins - AgileTV" />
+<meta name="twitter:description" content="Fon is now part of Agile TV. This move brings more innovation, scalability, and service to strengthen our TVaaS solutions." />
+<meta name="twitter:site" content="@agilecontents" />
+<meta name="twitter:creator" content="@agilecontents" />
+<meta name="twitter:image" content="https://agiletv.com/wp-content/uploads/2025/03/Agile-Fon-Thumbnail-1024x478.png" />
+<meta name="twitter:label1" content="Time to read" />
+<meta name="twitter:data1" content="Less than a minute" />
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":["LocalBusiness","Organization"],"@id":"https://agiletv.com/#organization","name":"AgileTV","url":"https://agiletv.com","sameAs":["https://twitter.com/agilecontents","https://www.linkedin.com/company/agilecontent","https://www.youtube.com/channel/UCdToGRHQyrFWjesiO7Bk-7Q"],"logo":{"@type":"ImageObject","@id":"https://agiletv.com/#logo","url":"https://agiletv.com/wp-content/uploads/2025/04/agiletv-thumbnail.png","contentUrl":"https://agiletv.com/wp-content/uploads/2025/04/agiletv-thumbnail.png","caption":"AgileTV","inLanguage":"en-US","width":"1200","height":"630"},"openingHours":["Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00-17:00"],"description":"Global leader in TVaaS &amp; video delivery solutions, empowering telcos and ISPs with innovative, scalable and cloud-based products for seamless TV experiences.","image":{"@id":"https://agiletv.com/#logo"}},{"@type":"WebSite","@id":"https://agiletv.com/#website","url":"https://agiletv.com","name":"AgileTV","alternateName":"Agile TV","publisher":{"@id":"https://agiletv.com/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://agiletv.com/wp-content/uploads/2025/03/Agile-Fon-Thumbnail.png","url":"https://agiletv.com/wp-content/uploads/2025/03/Agile-Fon-Thumbnail.png","width":"2048","height":"956","inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"https://agiletv.com/fon/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://agiletv.com","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://agiletv.com/fon/","name":"Fon &#8211; Redirection Page"}}]},{"@type":"WebPage","@id":"https://agiletv.com/fon/#webpage","url":"https://agiletv.com/fon/","name":"Fon Has Joined Agile TV - A New Chapter Begins - AgileTV","datePublished":"2025-03-28T16:29:00+01:00","dateModified":"2025-04-10T13:56:30+01:00","isPartOf":{"@id":"https://agiletv.com/#website"},"primaryImageOfPage":{"@id":"https://agiletv.com/wp-content/uploads/2025/03/Agile-Fon-Thumbnail.png"},"inLanguage":"en-US","breadcrumb":{"@id":"https://agiletv.com/fon/#breadcrumb"}},{"@type":"Person","@id":"https://agiletv.com/fon/#author","name":"Ana Lopes","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/19c93b5c26430d0e4d7b9273a5c840815d87d28a9215c81f530bdbac6744eb39?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/19c93b5c26430d0e4d7b9273a5c840815d87d28a9215c81f530bdbac6744eb39?s=96&amp;d=mm&amp;r=g","caption":"Ana Lopes","inLanguage":"en-US"},"worksFor":{"@id":"https://agiletv.com/#organization"}},{"@type":"Article","headline":"Fon Has Joined Agile TV - A New Chapter Begins - AgileTV","datePublished":"2025-03-28T16:29:00+01:00","dateModified":"2025-04-10T13:56:30+01:00","author":{"@id":"https://agiletv.com/fon/#author","name":"Ana Lopes"},"publisher":{"@id":"https://agiletv.com/#organization"},"description":"Fon is now part of Agile TV. This move brings more innovation, scalability, and service to strengthen our TVaaS solutions.","name":"Fon Has Joined Agile TV - A New Chapter Begins - AgileTV","@id":"https://agiletv.com/fon/#richSnippet","isPartOf":{"@id":"https://agiletv.com/fon/#webpage"},"image":{"@id":"https://agiletv.com/wp-content/uploads/2025/03/Agile-Fon-Thumbnail.png"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://agiletv.com/fon/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel='dns-prefetch' href='//js-eu1.hs-scripts.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="AgileTV &raquo; Feed" href="https://agiletv.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="AgileTV &raquo; Comments Feed" href="https://agiletv.com/comments/feed/" />
+<!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M5KS54X');</script>
+<!-- End Google Tag Manager -->
+<!-- Start cookieyes banner --> <script type="rocketlazyloadscript" id="cookieyes" data-rocket-type="text/javascript" data-rocket-src="https://cdn-cookieyes.com/client_data/48d5fd589daf394d4617637c/script.js" data-rocket-defer defer></script> <!-- End cookieyes banner --><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin><link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://agiletv.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fagiletv.com%2Ffon%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://agiletv.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fagiletv.com%2Ffon%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='pixfort-chart-style-css' href='http://agiletv.com/wp-content/plugins/pixfort-core/functions/css/elements/css/chart.min.css?ver=3.1.8' type='text/css' media='all' />
+<link rel='stylesheet' id='pixfort-circles-style-css' href='http://agiletv.com/wp-content/plugins/pixfort-core/functions/css/elements/css/circles.min.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='pixfort-fancy-mockup-style-css' href='http://agiletv.com/wp-content/plugins/pixfort-core/functions/css/elements/css/fancy-mockup.min.css?ver=3.1.8' type='text/css' media='all' />
+<link rel='stylesheet' id='pixfort-levels-style-css' href='http://agiletv.com/wp-content/plugins/pixfort-core/functions/css/elements/css/levels.min.css?ver=3.1.8' type='text/css' media='all' />
+<link rel='stylesheet' id='pixfort-map-style-css' href='http://agiletv.com/wp-content/plugins/pixfort-core/functions/css/elements/css/map.min.css?ver=3.1.8' type='text/css' media='all' />
+<link rel='stylesheet' id='pixfort-marquee-style-css' href='http://agiletv.com/wp-content/plugins/pixfort-core/functions/css/elements/css/marquee.min.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='pixfort-carousel-style-css' href='http://agiletv.com/wp-content/plugins/pixfort-core/functions/css/elements/css/carousel.min.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='pixfort-story-style-css' href='http://agiletv.com/wp-content/plugins/pixfort-core/functions/css/elements/css/story.min.css?ver=3.1.8' type='text/css' media='all' />
+<link rel='stylesheet' id='pixfort-video-style-css' href='http://agiletv.com/wp-content/plugins/pixfort-core/functions/css/elements/css/video.min.css?ver=3.1.8' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 650px;--wp--style--global--wide-size: 1000px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-term-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-term-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<style id='pix-intro-handle-inline-css' type='text/css'>
+
+	 body:not(.render) .pix-overlay-item {
+		 opacity: 0 !important;
+	 }
+	 body:not(.pix-loaded) .pix-wpml-header-btn {
+		 opacity: 0;
+	 }
+		 html:not(.render) {
+			 background: #ffffff  !important;
+		 }
+		 .pix-page-loading-bg:after {
+			 content: " ";
+			 position: fixed;
+			 top: 0;
+			 left: 0;
+			 width: 100vw;
+			 height: 100vh;
+			 display: block;
+			 pointer-events: none;
+			 transition: opacity .16s ease-in-out;
+			 transform-style: flat;
+			 z-index: 99999999999999999999;
+			 opacity: 1;
+			 background: #ffffff !important;
+		 }
+		 body.render .pix-page-loading-bg:after {
+			 opacity: 0;
+		 }
+	 	 
+/*# sourceURL=pix-intro-handle-inline-css */
+</style>
+<link rel='stylesheet' id='pixfort-bootstrap-css' href='http://agiletv.com/wp-content/themes/essentials/inc/scss/bootstrap.min.css?ver=3.1.8' type='text/css' media='all' />
+<link rel='stylesheet' id='pix-flickity-style-css' href='http://agiletv.com/wp-content/themes/essentials/css/build/flickity.min.css?ver=3.1.8' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='essentials-pixicon-font-css' href='https://agiletv.com/wp-content/cache/min/1/wp-content/themes/essentials/css/build/pixicon-main/style.min.css?ver=1769690043' type='text/css' media='all' />
+<link rel='stylesheet' id='essentials-select-css-css' href='http://agiletv.com/wp-content/themes/essentials/css/build/bootstrap-select.min.css?ver=3.1.8' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='pix-essentials-style-2-css' href='https://agiletv.com/wp-content/cache/min/1/wp-content/uploads/wp-scss-cache/pix-essentials-style-2.css?ver=1769690043' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='http://agiletv.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.34.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-9-css' href='http://agiletv.com/wp-content/uploads/elementor/css/post-9.css?ver=1769690038' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='http://agiletv.com/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.34.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-34890-css' href='https://agiletv.com/wp-content/cache/background-css/1/agiletv.com/wp-content/uploads/elementor/css/post-34890.css?ver=1769690038&wpr_t=1769693928' type='text/css' media='all' />
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:var(--wpr-bg-de15a99e-139d-46d4-8842-76dcf4ed18bd) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+/*# sourceURL=rocket-lazyload-inline-css */
+</style>
+<script type="text/javascript" src="http://agiletv.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="http://agiletv.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+<!-- Google Analytics snippet added by Site Kit -->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.googletagmanager.com/gtag/js?id=GT-K8H9VWL" id="google_gtagjs-js" async></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="google_gtagjs-js-after">
+/* <![CDATA[ */
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["agiletv.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-K8H9VWL");
+//# sourceURL=google_gtagjs-js-after
+/* ]]> */
+</script>
+<link rel="https://api.w.org/" href="https://agiletv.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://agiletv.com/wp-json/wp/v2/pages/34890" /><link rel='shortlink' href='https://agiletv.com/?p=34890' />
+<meta name="generator" content="Site Kit by Google 1.170.0" />			<!-- DO NOT COPY THIS SNIPPET! Start of Page Analytics Tracking for HubSpot WordPress plugin v11.3.33-->
+			<script type="rocketlazyloadscript" class="hsq-set-content-id" data-content-id="standard-page">
+				var _hsq = _hsq || [];
+				_hsq.push(["setContentType", "standard-page"]);
+			</script>
+			<!-- DO NOT COPY THIS SNIPPET! End of Page Analytics Tracking for HubSpot WordPress plugin -->
+			<meta name="generator" content="Elementor 3.34.1; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-disabled, font_display-auto">
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://agiletv.com/wp-content/uploads/2024/11/agile-tv-icon-e1732018103457-75x75.png" sizes="32x32" />
+<link rel="icon" href="https://agiletv.com/wp-content/uploads/2024/11/agile-tv-icon-e1732018103457-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://agiletv.com/wp-content/uploads/2024/11/agile-tv-icon-e1732018103457-300x300.png" />
+<meta name="msapplication-TileImage" content="https://agiletv.com/wp-content/uploads/2024/11/agile-tv-icon-e1732018103457-300x300.png" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><style id="rocket-lazyrender-inline-css">[data-wpr-lazyrender] {content-visibility: auto;}</style><style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion">.elementor-34890 .elementor-element.elementor-element-9227a53:not(.elementor-motion-effects-element-type-background), .elementor-34890 .elementor-element.elementor-element-9227a53 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-cc39ea83-2e6b-4c46-bf51-11338c95368b: url('https://agiletv.com/wp-content/uploads/2025/01/tv-as-a-service-video_rebranded_3_frame.jpg');}</style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">.elementor-3368 .elementor-element.elementor-element-2fd152f8:not(.elementor-motion-effects-element-type-background), .elementor-3368 .elementor-element.elementor-element-2fd152f8 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-d7751f13-25c7-4068-9a21-9a9d3e5ce9c4: url('https://agiletv.com/wp-content/uploads/2020/06/Gradient-AgileTV-scaled.jpg');}.elementor-3368 .elementor-element.elementor-element-2fd152f8:not(.elementor-motion-effects-element-type-background), .elementor-3368 .elementor-element.elementor-element-2fd152f8 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-48cf65e5-5483-4fdf-a031-5ff8bd252ecc: url('https://agiletv.com/wp-content/uploads/2023/03/Agile-TV-in-living-room_s.webp');}.elementor-3368 .elementor-element.elementor-element-2fd152f8:not(.elementor-motion-effects-element-type-background), .elementor-3368 .elementor-element.elementor-element-2fd152f8 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-a9efef0f-17a4-454f-b01d-4ef28cc72d33: url('https://agiletv.com/wp-content/uploads/2020/06/Gradient-AgileTV-mobile.png');}.rll-youtube-player .play{--wpr-bg-de15a99e-139d-46d4-8842-76dcf4ed18bd: url('http://agiletv.com/wp-content/plugins/wp-rocket/assets/img/youtube.png');}</style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = [{"selector":".elementor-3368 .elementor-element.elementor-element-2fd152f8:not(.elementor-motion-effects-element-type-background), .elementor-3368 .elementor-element.elementor-element-2fd152f8 > .elementor-motion-effects-container > .elementor-motion-effects-layer","style":".elementor-3368 .elementor-element.elementor-element-2fd152f8:not(.elementor-motion-effects-element-type-background), .elementor-3368 .elementor-element.elementor-element-2fd152f8 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-d7751f13-25c7-4068-9a21-9a9d3e5ce9c4: url('https:\/\/agiletv.com\/wp-content\/uploads\/2020\/06\/Gradient-AgileTV-scaled.jpg');}","hash":"d7751f13-25c7-4068-9a21-9a9d3e5ce9c4","url":"https:\/\/agiletv.com\/wp-content\/uploads\/2020\/06\/Gradient-AgileTV-scaled.jpg"},{"selector":".elementor-3368 .elementor-element.elementor-element-2fd152f8:not(.elementor-motion-effects-element-type-background), .elementor-3368 .elementor-element.elementor-element-2fd152f8 > .elementor-motion-effects-container > .elementor-motion-effects-layer","style":".elementor-3368 .elementor-element.elementor-element-2fd152f8:not(.elementor-motion-effects-element-type-background), .elementor-3368 .elementor-element.elementor-element-2fd152f8 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-48cf65e5-5483-4fdf-a031-5ff8bd252ecc: url('https:\/\/agiletv.com\/wp-content\/uploads\/2023\/03\/Agile-TV-in-living-room_s.webp');}","hash":"48cf65e5-5483-4fdf-a031-5ff8bd252ecc","url":"https:\/\/agiletv.com\/wp-content\/uploads\/2023\/03\/Agile-TV-in-living-room_s.webp"},{"selector":".elementor-3368 .elementor-element.elementor-element-2fd152f8:not(.elementor-motion-effects-element-type-background), .elementor-3368 .elementor-element.elementor-element-2fd152f8 > .elementor-motion-effects-container > .elementor-motion-effects-layer","style":".elementor-3368 .elementor-element.elementor-element-2fd152f8:not(.elementor-motion-effects-element-type-background), .elementor-3368 .elementor-element.elementor-element-2fd152f8 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-a9efef0f-17a4-454f-b01d-4ef28cc72d33: url('https:\/\/agiletv.com\/wp-content\/uploads\/2020\/06\/Gradient-AgileTV-mobile.png');}","hash":"a9efef0f-17a4-454f-b01d-4ef28cc72d33","url":"https:\/\/agiletv.com\/wp-content\/uploads\/2020\/06\/Gradient-AgileTV-mobile.png"},{"selector":".rll-youtube-player .play","style":".rll-youtube-player .play{--wpr-bg-de15a99e-139d-46d4-8842-76dcf4ed18bd: url('http:\/\/agiletv.com\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png');}","hash":"de15a99e-139d-46d4-8842-76dcf4ed18bd","url":"http:\/\/agiletv.com\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png"}]; const rocket_excluded_pairs = [{"selector":".elementor-34890 .elementor-element.elementor-element-9227a53:not(.elementor-motion-effects-element-type-background), .elementor-34890 .elementor-element.elementor-element-9227a53 > .elementor-motion-effects-container > .elementor-motion-effects-layer","style":".elementor-34890 .elementor-element.elementor-element-9227a53:not(.elementor-motion-effects-element-type-background), .elementor-34890 .elementor-element.elementor-element-9227a53 > .elementor-motion-effects-container > .elementor-motion-effects-layer{--wpr-bg-cc39ea83-2e6b-4c46-bf51-11338c95368b: url('https:\/\/agiletv.com\/wp-content\/uploads\/2025\/01\/tv-as-a-service-video_rebranded_3_frame.jpg');}","hash":"cc39ea83-2e6b-4c46-bf51-11338c95368b","url":"https:\/\/agiletv.com\/wp-content\/uploads\/2025\/01\/tv-as-a-service-video_rebranded_3_frame.jpg"}];</script><meta name="generator" content="WP Rocket 3.20.3" data-wpr-features="wpr_lazyload_css_bg_img wpr_delay_js wpr_defer_js wpr_lazyload_images wpr_lazyload_iframes wpr_preconnect_external_domains wpr_auto_preload_fonts wpr_automatic_lazy_rendering wpr_oci wpr_image_dimensions wpr_minify_css wpr_preload_links wpr_host_fonts_locally wpr_desktop" /></head>
+
+<body class="wp-singular page-template-default page page-id-34890 wp-theme-essentials  site-render-fade-page-transition elementor-default elementor-kit-9 elementor-page elementor-page-34890" style="">
+		<div  class="pix-page-loading-bg"></div>
+	            <div  class="pix-loading-circ-path"></div>
+        	<div  id="page" class="site">
+		        <div  class="pix-header-boxed pix-is-sticky-header position-relative">
+            <div  class="position-absolute w-100 ">
+                 <div class="pix-topbar position-relative pix-header-desktop pix-topbar-normal  bg-custom  text-white sticky-top2 p-sticky" style="z-index:999998;background:#212529;" >
+     <div class="container-xl">
+         <div class="row d-flex align-items-center align-items-stretch">
+                          <div class="col-12 col-lg-6 column  text-left justify-content-start py-md-0 d-flex align-items-center">
+ 				             </div>
+
+                                       <div class="col-12 col-lg-6 column text-right justify-content-end pix-header-min-height py-md-0 d-flex align-items-center justify-content-end">
+ 				        <div class="d-inline-flex align-items-center line-height-1 pix-py-5 pix-hover-item mb-0">
+            <a data-anim-type="disabled" class="text-white btn btn-link p-0 line-height-1 pix-header-text text-sm  d-inline-flex2 align-items-center2" href="https://agiletv.com/agile-content-is-now-agile-tv/"  style="" >
+                Agile Content is now AgileTV</span>
+                <i class="font-weight-bold pixicon-angle-right pix-header-icon-format pix-hover-right ml-2"></i>            </a></div>
+                    <span class="mx-2"></span>
+                <div class="d-inline-flex align-items-center line-height-1 pix-py-5 pix-hover-item mb-0">
+            <a data-anim-type="disabled" class="text-white btn btn-link p-0 line-height-1 pix-header-text text-sm  d-inline-flex2 align-items-center2" href="https://agiletv.com/resources/"  style="" >
+                Resources</span>
+                <i class="font-weight-bold pixicon-angle-right pix-header-icon-format pix-hover-right ml-2"></i>            </a></div>
+                    <div class="d-inline-flex pix-px-5 align-self-stretch position-relative mx-3">
+            <div class="bg-body-default pix-header-divider   pix-sm" data-color="body-default" data-scroll-color=""></div>
+                    </div>
+                <div class="d-inline-flex align-items-center line-height-1 pix-py-5 pix-hover-item mb-0">
+            <a data-anim-type="disabled" class="text-white btn btn-link p-0 line-height-1 pix-header-text text-sm  d-inline-flex2 align-items-center2" href="https://investors.agiletv.com" target=&quot;_blank&quot; style="" >
+                Go to Investors</span>
+                <i class="font-weight-bold pixicon-angle-right pix-header-icon-format pix-hover-right ml-2"></i>            </a></div>
+                         </div>
+
+         </div>
+              </div>
+      </div>
+                <div class="pix-header-placeholder position-relative d-block w-100">
+                        <header id="masthead" class="pix-header  is-smart-sticky pix-header-desktop d-block2 pix-header-normal2 pix-scroll-shadow sticky-top2 position-relative pix-header-box " data-text="body-default" data-text-scroll="heading-default">
+     <div class="container-xl">
+         <div class="pix-header-box-part shadow pix-main-part pix-header-container-area bg-white  rounded-xl rounded-xl" data-bg-class="bg-white" data-bg-color=""  style="" data-scroll-class="bg-light-blur" data-scroll-color="" >
+             <nav class="navbar pix-main-menu navbar-hover-drop navbar-expand-lg navbar-light text-left justify-content-start">
+    				        <span class="mx-1"></span>
+            <div class=" d-flex align-items-center">
+        <div class="d-inline-block " data-anim-type="disabled" style="">
+                                    <a class="navbar-brand" href="https://agiletv.com/" target="" rel="home">
+                            <img width="131" height="40" class="" src="https://agiletv.com/wp-content/uploads/2024/12/Agiletv-logo_color.png" alt="AgileTV" style="height:40px;width:auto;" >
+                                                    </a>
+                                </div>
+    </div>
+            <span class="mx-1"></span>
+        <div id="navbarNav-338938" class="collapse navbar-collapse align-self-stretch pix-nav-dropdown-angle pix-secondary-scroll-nav-line  pix-nav-global-active-line justify-content-end "><ul id="menu-agile-content" class="navbar-nav nav-style-megamenu align-self-stretch align-items-center "><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-19576" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-19576 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center"><a title="Agile TV Technologies" class=" pix-nav-link text-body-default dropdown-toggle nav-link animate-in" target="_self" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-anim-type="fade-in" id="menu-item-dropdown-19576"><span class="pix-dropdown-title text-sm  pix-header-text">Products</span></a>
+<div class="dropdown-menu"  aria-labelledby="menu-item-dropdown-19576" role="navigation">
+<div class="submenu-box pix-default-menu bg-white"><div  class="container">	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33269 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="TV Platform" class=" pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/tv-platform/"><span class="pix-dropdown-title  text-body-default ">TV Platform</span></a></div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33274" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-33274 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Video Technologies" class=" pix-nav-link  dropdown-item dropdown-toggle" target="_self" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="menu-item-dropdown-33274"><span class="pix-dropdown-title  text-body-default ">Video Technologies</span></a>
+	<div class="dropdown-menu"  aria-labelledby="menu-item-dropdown-33274" role="navigation">
+<div class="submenu-box pix-default-menu bg-white"><div  class="container">		<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33273 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="CDN Solutions" class=" pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/cdn-solutions/"><span class="pix-dropdown-title  text-body-default ">CDN Solutions</span></a></div>
+		<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33270 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Origin &amp; Media Server" class=" pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/origin-media-server-solution/"><span class="pix-dropdown-title  text-body-default ">Origin &#038; Media Server</span></a></div>
+		<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33271 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Subtitling Solutions​" class=" pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/subtitling-solutions/"><span class="pix-dropdown-title  text-body-default ">Subtitling Solutions​</span></a></div>
+	</div>
+	</div>
+	</div>
+</div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33679 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Device Manager​" class=" pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/agiletv-device-manager-multiscreen-control/"><span class="pix-dropdown-title  text-body-default ">Device Manager​</span></a></div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-36716" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36716 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Custom Android Devices" class=" pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/custom-android-devices/"><span class="pix-dropdown-title  text-body-default ">Custom Android Devices</span></a></div>
+</div>
+</div>
+</div>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33268 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center"><a title="TV as a Service" class=" pix-nav-link text-body-default nav-link animate-in" target="_self" href="https://agiletv.com/agile-tv-as-a-service/" data-anim-type="fade-in"><span class="pix-dropdown-title text-sm  pix-header-text">TV as a Service</span></a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-33330" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33330 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center"><a title="Managed Services" class=" pix-nav-link text-body-default nav-link animate-in" target="_self" href="https://agiletv.com/managed-services/" data-anim-type="fade-in"><span class="pix-dropdown-title text-sm  pix-header-text">Managed Services</span></a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-19932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-19932 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center"><a title="About" class=" pix-nav-link text-body-default dropdown-toggle nav-link animate-in" target="_self" href="https://agiletv.com/about-us/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-anim-type="fade-in" id="menu-item-dropdown-19932"><span class="pix-dropdown-title text-sm  pix-header-text">About</span></a>
+<div class="dropdown-menu"  aria-labelledby="menu-item-dropdown-19932" role="navigation">
+<div class="submenu-box pix-default-menu bg-white"><div class="container">	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-20149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20149 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Our Company" class=" pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/about-us/"><span class="pix-dropdown-title  text-body-default ">Our Company</span></a></div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-21499" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21499 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Management Team" class=" pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/management-team/"><span class="pix-dropdown-title  text-body-default ">Management Team</span></a></div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-35604" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35604 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Resources" class=" pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/resources/"><span class="pix-dropdown-title  text-body-default ">Resources</span></a></div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-26142" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26142 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="ESG" class=" pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/esg/"><span class="pix-dropdown-title  text-body-default ">ESG</span></a></div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-37539" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37539 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Certifications &#038; Assurance" class=" pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/certifications-assurance/"><span class="pix-dropdown-title  text-body-default ">Certifications &#038; Assurance</span></a></div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-20148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20148 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Careers" class=" pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/careers/"><span class="pix-dropdown-title  text-body-default ">Careers</span></a></div>
+</div>
+</div>
+</div>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23393" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-23393 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center"><a title="News" class=" pix-nav-link text-body-default dropdown-toggle nav-link animate-in" target="_self" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-anim-type="fade-in" id="menu-item-dropdown-23393"><span class="pix-dropdown-title text-sm  pix-header-text">News</span></a>
+<div class="dropdown-menu"  aria-labelledby="menu-item-dropdown-23393" role="navigation">
+<div class="submenu-box pix-default-menu bg-white"><div class="container">	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-24625" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-24625 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Corporate News" class=" pix-nav-link  dropdown-item dropdown-toggle" target="_self" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="menu-item-dropdown-24625"><span class="pix-dropdown-title  text-body-default ">Corporate News</span></a>
+	<div class="dropdown-menu"  aria-labelledby="menu-item-dropdown-24625" role="navigation">
+<div class="submenu-box pix-default-menu bg-white"><div class="container">		<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23238" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23238 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="EN | Corporate News" class=" pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/corporate-news/"><span class="pix-dropdown-title  text-body-default ">EN | Corporate News</span></a></div>
+		<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-24624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24624 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="ES | Noticias Corporativas" class=" pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/noticias-corporativas/"><span class="pix-dropdown-title  text-body-default ">ES | Noticias Corporativas</span></a></div>
+	</div>
+	</div>
+	</div>
+</div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23239" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23239 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Blog" class=" pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/blog/"><span class="pix-dropdown-title  text-body-default ">Blog</span></a></div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25594 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Events" class=" pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/events/"><span class="pix-dropdown-title  text-body-default ">Events</span></a></div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-37551" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37551 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="AgileTV in the Media" class=" pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/agiletv-in-the-media/"><span class="pix-dropdown-title  text-body-default ">AgileTV in the Media</span></a></div>
+</div>
+</div>
+</div>
+</li>
+</ul></div>                <a data-anim-type="fade-in-left" href="#" class="btn pix-header-btn btn-link p-0 pix-px-15 pix-search-btn pix-toggle-overlay m-0 animate-in d-inline-flex align-items-center text-body-default" ><span class="screen-reader-text sr-only">Search</span><i class="pixicon-zoom text-18 pix-header-text font-weight-bold"></i></a>
+                    <div class="d-inline-flex align-items-center d-inline-block2 text-sm mb-0">
+            <a data-anim-type="disabled" class="btn btn-gradient-primary btn-rounded text-white bg-gradient-primary font-weight-bold d-flex2 align-items-center mr-0" href="https://agiletv.com/contact"  style="color:#fff;" data-popup-id="" data-popup-link="" >
+                            <span>Contact Us</span>
+                        </a>
+        </div>
+                     </nav>
+             
+         </div>
+
+         
+
+
+
+         
+                             <div class="pix-header-desktop pix-header-stack  bg-transparent  pix-header-box-part" style="">
+                                    <div class="container-xl">
+                  <div class="row">
+                                            <div class="col-12 col-lg-4 column text-center  text-left justify-content-start py-md-0 d-flex align-items-center">
+          				                      </div>
+                                            <div class="col-12 col-lg-4 column text-center  text-center justify-content-center py-md-0 d-flex align-items-center">
+          				                      </div>
+                                            <div class="col-12 col-lg-4 column text-center  text-right justify-content-end py-md-0 d-flex align-items-center">
+          				                      </div>
+
+                  </div>
+                  </div>
+                                </div>
+              
+
+          </div>
+
+ </header>
+
+                </div>
+            </div>
+        </div>
+ <div class="pix-topbar pix-header-mobile pix-topbar-normal bg-white text-white p-sticky py-22 " style="" >
+     <div class="container">
+         <div class="row">
+                          <div class="col-12 column text-right py-md-02 pix-py-10">
+ 				        <div class="d-inline-flex align-items-center line-height-1 pix-py-5 pix-hover-item mb-0">
+            <a data-anim-type="disabled" class="text-body-default font-weight-bold btn btn-link p-0 line-height-1 pix-header-text text-sm  d-inline-flex2 align-items-center2" href="http://investors.agilecontent.com/" target=&quot;_blank&quot; style="" >
+                Go to Investors</span>
+                <i class="font-weight-bold pixicon-angle-right pix-header-icon-format pix-hover-right ml-2"></i>            </a></div>
+                         </div>
+
+         </div>
+              </div>
+              <div  class="bg-gray-2" style="width:100%;height:1px;"></div>
+      </div>
+<div  class="pix-mobile-header-sticky w-100"></div>    <header  id="mobile_head" class="pix-header is-smart-sticky pix-header-mobile d-inline-block pix-header-normal pix-scroll-shadow sticky-top header-scroll2 bg-white" style="">
+         <div class="container">
+                          <nav class="navbar navbar-hover-drop navbar-expand-lg2 navbar-light d-inline-block2 ">
+    				    <div class=" d-flex align-items-center">
+        <div class="d-inline-block " data-anim-type="disabled" style="">
+                                <a class="navbar-brand" href="https://agiletv.com/" target="" rel="home">
+                        <img width="147" height="45" class="" src="https://agiletv.com/wp-content/uploads/2024/12/Agiletv-logo_color.png" alt="AgileTV" style="height:45px;width:auto;">
+                                            </a>
+                            </div>
+    </div>
+                <button class="navbar-toggler hamburger--spin hamburger small-menu-toggle" type="button" data-toggle="collapse" data-target="#navbarNav-282857" aria-controls="navbarNav-282857" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-box">
+
+                    <span class="hamburger-inner bg-body-default">
+                        <span class="hamburger-inner-before bg-body-default"></span>
+                        <span class="hamburger-inner-after bg-body-default"></span>
+                    </span>
+
+                </span>
+            </button>
+            <div id="navbarNav-282857" class="collapse navbar-collapse align-self-stretch   "><ul id="menu-agile-content-1" class="navbar-nav nav-style-megamenu align-self-stretch align-items-center "><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-19576 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center"><a title="Agile TV Technologies" class=" font-weight-bold pix-nav-link text-body-default dropdown-toggle nav-link animate-in" target="_self" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-anim-type="fade-in" id="m-menu-item-dropdown-19576"><span class="pix-dropdown-title text-sm  pix-header-text">Products</span></a>
+<div class="dropdown-menu"  aria-labelledby="m-menu-item-dropdown-19576" role="navigation">
+<div class="submenu-box pix-default-menu bg-gray-1"><div class="container">	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33269 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="TV Platform" class=" font-weight-bold pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/tv-platform/"><span class="pix-dropdown-title  text-body-default  font-weight-bold">TV Platform</span></a></div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-33274 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Video Technologies" class=" font-weight-bold pix-nav-link  dropdown-item dropdown-toggle" target="_self" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="m-menu-item-dropdown-33274"><span class="pix-dropdown-title  text-body-default  font-weight-bold">Video Technologies</span></a>
+	<div class="dropdown-menu"  aria-labelledby="m-menu-item-dropdown-33274" role="navigation">
+<div class="submenu-box pix-default-menu bg-gray-1"><div class="container">		<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33273 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="CDN Solutions" class=" font-weight-bold pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/cdn-solutions/"><span class="pix-dropdown-title  text-body-default  font-weight-bold">CDN Solutions</span></a></div>
+		<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33270 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Origin &amp; Media Server" class=" font-weight-bold pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/origin-media-server-solution/"><span class="pix-dropdown-title  text-body-default  font-weight-bold">Origin &#038; Media Server</span></a></div>
+		<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33271 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Subtitling Solutions​" class=" font-weight-bold pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/subtitling-solutions/"><span class="pix-dropdown-title  text-body-default  font-weight-bold">Subtitling Solutions​</span></a></div>
+	</div>
+	</div>
+	</div>
+</div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33679 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Device Manager​" class=" font-weight-bold pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/agiletv-device-manager-multiscreen-control/"><span class="pix-dropdown-title  text-body-default  font-weight-bold">Device Manager​</span></a></div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36716 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Custom Android Devices" class=" font-weight-bold pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/custom-android-devices/"><span class="pix-dropdown-title  text-body-default  font-weight-bold">Custom Android Devices</span></a></div>
+</div>
+</div>
+</div>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33268 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center"><a title="TV as a Service" class=" font-weight-bold pix-nav-link text-body-default nav-link animate-in" target="_self" href="https://agiletv.com/agile-tv-as-a-service/" data-anim-type="fade-in"><span class="pix-dropdown-title text-sm  pix-header-text">TV as a Service</span></a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33330 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center"><a title="Managed Services" class=" font-weight-bold pix-nav-link text-body-default nav-link animate-in" target="_self" href="https://agiletv.com/managed-services/" data-anim-type="fade-in"><span class="pix-dropdown-title text-sm  pix-header-text">Managed Services</span></a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-19932 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center"><a title="About" class=" font-weight-bold pix-nav-link text-body-default dropdown-toggle nav-link animate-in" target="_self" href="https://agiletv.com/about-us/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-anim-type="fade-in" id="m-menu-item-dropdown-19932"><span class="pix-dropdown-title text-sm  pix-header-text">About</span></a>
+<div class="dropdown-menu"  aria-labelledby="m-menu-item-dropdown-19932" role="navigation">
+<div class="submenu-box pix-default-menu bg-gray-1"><div class="container">	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20149 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Our Company" class=" font-weight-bold pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/about-us/"><span class="pix-dropdown-title  text-body-default  font-weight-bold">Our Company</span></a></div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21499 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Management Team" class=" font-weight-bold pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/management-team/"><span class="pix-dropdown-title  text-body-default  font-weight-bold">Management Team</span></a></div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35604 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Resources" class=" font-weight-bold pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/resources/"><span class="pix-dropdown-title  text-body-default  font-weight-bold">Resources</span></a></div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26142 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="ESG" class=" font-weight-bold pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/esg/"><span class="pix-dropdown-title  text-body-default  font-weight-bold">ESG</span></a></div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37539 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Certifications &#038; Assurance" class=" font-weight-bold pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/certifications-assurance/"><span class="pix-dropdown-title  text-body-default  font-weight-bold">Certifications &#038; Assurance</span></a></div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20148 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Careers" class=" font-weight-bold pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/careers/"><span class="pix-dropdown-title  text-body-default  font-weight-bold">Careers</span></a></div>
+</div>
+</div>
+</div>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-23393 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center"><a title="News" class=" font-weight-bold pix-nav-link text-body-default dropdown-toggle nav-link animate-in" target="_self" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-anim-type="fade-in" id="m-menu-item-dropdown-23393"><span class="pix-dropdown-title text-sm  pix-header-text">News</span></a>
+<div class="dropdown-menu"  aria-labelledby="m-menu-item-dropdown-23393" role="navigation">
+<div class="submenu-box pix-default-menu bg-gray-1"><div class="container">	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-24625 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Corporate News" class=" font-weight-bold pix-nav-link  dropdown-item dropdown-toggle" target="_self" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="m-menu-item-dropdown-24625"><span class="pix-dropdown-title  text-body-default  font-weight-bold">Corporate News</span></a>
+	<div class="dropdown-menu"  aria-labelledby="m-menu-item-dropdown-24625" role="navigation">
+<div class="submenu-box pix-default-menu bg-gray-1"><div class="container">		<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23238 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="EN | Corporate News" class=" font-weight-bold pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/corporate-news/"><span class="pix-dropdown-title  text-body-default  font-weight-bold">EN | Corporate News</span></a></div>
+		<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24624 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="ES | Noticias Corporativas" class=" font-weight-bold pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/noticias-corporativas/"><span class="pix-dropdown-title  text-body-default  font-weight-bold">ES | Noticias Corporativas</span></a></div>
+	</div>
+	</div>
+	</div>
+</div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23239 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Blog" class=" font-weight-bold pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/blog/"><span class="pix-dropdown-title  text-body-default  font-weight-bold">Blog</span></a></div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25594 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="Events" class=" font-weight-bold pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/events/"><span class="pix-dropdown-title  text-body-default  font-weight-bold">Events</span></a></div>
+	<div itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37551 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center w-100"><a title="AgileTV in the Media" class=" font-weight-bold pix-nav-link  dropdown-item" target="_self" href="https://agiletv.com/agiletv-in-the-media/"><span class="pix-dropdown-title  text-body-default  font-weight-bold">AgileTV in the Media</span></a></div>
+</div>
+</div>
+</div>
+</li>
+</ul></div>        <div class="d-inline-flex align-items-center d-inline-block2 text-sm mb-0">
+            <a data-anim-type="disabled" class="btn btn-primary btn-sm pix-py-10 font-weight-bold d-flex2 align-items-center mr-0" href="https://agiletv.com/contact"  style="" data-popup-id="" data-popup-link="" >
+                            <span>Contact Us</span>
+                        </a>
+        </div>
+                     </nav>
+                                   </div>
+                      <div  class="pix-header-border bg-gray-2" style="width:100%;height:1px;"></div>
+              </header>
+    <div  id="content" class="site-content bg-gray-1 " style="">
+        <div  id="primary" class="content-area">
+        <main id="main" class="site-main">
+            
+<article id="post-34890" class="entry-content2 post-34890 page type-page status-publish has-post-thumbnail hentry">
+
+
+			<div data-elementor-type="wp-page" data-elementor-id="34890" class="elementor elementor-34890">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-9227a53 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9227a53" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/agiletv.com\/docs\/tv-as-a-service-video_rebranded_compressed.mp4&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_video_start&quot;:0,&quot;background_video_end&quot;:100}">
+								<div class="elementor-background-video-container elementor-hidden-mobile" aria-hidden="true">
+													<video class="elementor-background-video-hosted" autoplay muted playsinline loop></video>
+											</div>
+									<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-39ef1d4" data-id="39ef1d4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4b07180 elementor-widget elementor-widget-image" data-id="4b07180" data-element_type="widget" data-widget_type="image.default">
+															<img fetchpriority="high" decoding="async" width="2328" height="404" src="https://agiletv.com/wp-content/uploads/2025/03/agile-and-fon.png" class="attachment-full size-full wp-image-34892" alt="" srcset="https://agiletv.com/wp-content/uploads/2025/03/agile-and-fon.png 2328w, https://agiletv.com/wp-content/uploads/2025/03/agile-and-fon-300x52.png 300w, https://agiletv.com/wp-content/uploads/2025/03/agile-and-fon-1024x178.png 1024w, https://agiletv.com/wp-content/uploads/2025/03/agile-and-fon-768x133.png 768w, https://agiletv.com/wp-content/uploads/2025/03/agile-and-fon-1536x267.png 1536w, https://agiletv.com/wp-content/uploads/2025/03/agile-and-fon-2048x355.png 2048w" sizes="(max-width: 2328px) 100vw, 2328px" />															</div>
+				<div class="elementor-element elementor-element-3094869 elementor-widget elementor-widget-heading" data-id="3094869" data-element_type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Fon is now part of AgileTV</h2>				</div>
+				<div class="elementor-element elementor-element-98a4429 elementor-widget elementor-widget-pix-text" data-id="98a4429" data-element_type="widget" data-widget_type="pix-text.default">
+				<div class="elementor-widget-container">
+					<div class="pix-el-text w-100 text-center " ><p class="text-18 resp-option text-gray-2 text-center " >You’ve arrived from www.fon.com. Fon has officially joined the AgileTV brand.
+<br>
+<br>Same people. Same service. Now under one unified platform.</p></div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3999e2c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3999e2c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b3c871d" data-id="b3c871d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-182ae52 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="182ae52" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-5142bbf" data-id="5142bbf" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7c2b569 elementor-widget elementor-widget-heading" data-id="7c2b569" data-element_type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Why this  <span class="gradient"> change?</span></h2>				</div>
+				<div class="elementor-element elementor-element-6e3e178 elementor-invisible elementor-widget elementor-widget-pix-text" data-id="6e3e178" data-element_type="widget" data-widget_type="pix-text.default">
+				<div class="elementor-widget-container">
+					<div class="pix-el-text w-100 text-center " ><div class="d-inline-block" style="max-width:950px;"><p class="text-20 resp-option text-body-default text-center " ><span class="text-body-default animate-in d-inline-block" data-anim-delay="200" data-anim-type="fade-in-up">We’ve consolidated our brands to offer a stronger, more unified experience to our clients and partners.
+By bringing Fon, Edgeware and WeTek together under AgileTV, we streamline communication, strengthen our solutions, and make it easier for you to find what you need — all in one place.
+<br>
+<br>
+<b>No contracts, services, or support channels have changed. If you’re already working with us, you’re in the right place.</b></span></p></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-cf13ba3 elementor-widget__width-auto elementor-widget elementor-widget-pix-button" data-id="cf13ba3" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<span  class="btn m-0     shadow shadow-hover text-heading-default btn-white d-inline-block pix-hover-item      btn-rounded animate-in btn-lg"   data-anim-type="fade-in-left" data-anim-delay="400" ><span class="font-weight-bold " >What you’ll find on AgileTV</span> <i class="font-weight-bold pixicon-arrow-circle-down  pix-hover-right  ml-1"></i></span>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-a5d033b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a5d033b" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-2fa7b60" data-id="2fa7b60" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="pix-base-transition animate-in elementor-section elementor-inner-section elementor-element elementor-element-2c5e054 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-anim-type="pix-3d-down-in" data-anim-delay="500" data-id="2c5e054" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-da34ebb" data-id="da34ebb" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5ef8dcf elementor-invisible elementor-widget elementor-widget-pix-feature" data-id="5ef8dcf" data-element_type="widget" data-widget_type="pix-feature.default">
+				<div class="elementor-widget-container">
+					<div id="duo-icon-61927414" class="pix-feature-el text-custom "><div class="d-inline-block mw-100 text-body-default animate-in" data-anim-type="fade-in-up" data-anim-delay="50" style="width:54px;aspect-ratio:1/1 !important;position:relative;line-height:54px;text-align:center;"><span style="display:inline-block;font-size:30px;line-height:30px;"><svg width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs></defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path> <path d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z" fill="#000000" fill-rule="nonzero"></path> </g> </svg></span></div><h5 class="font-weight-bold    animate-in" style="padding-top:15px;color:#0E0E1E !important;" data-anim-type="fade-in-up" data-anim-delay="150">Explore our products and solutions</h5><div class="text-body-default      animate-in" style="padding-top:3px;" data-anim-type="fade-in-up" data-anim-delay="250"></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2d06c18 elementor-widget__width-auto elementor-widget elementor-widget-pix-button" data-id="2d06c18" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a  href="https://agiletv.com/agile-tv-as-a-service/" class="btn m-0     btn-primary d-inline-block     btn-rounded animate-in btn-normal"   data-anim-type="fade-in-up" data-anim-delay="150" ><span class="font-weight-bold " >Know more</span></a>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3a88aff" data-id="3a88aff" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="pix-base-transition animate-in elementor-section elementor-inner-section elementor-element elementor-element-90089c7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-anim-type="pix-3d-down-in" data-anim-delay="600" data-id="90089c7" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-b5098e3" data-id="b5098e3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4865e74 elementor-invisible elementor-widget elementor-widget-pix-feature" data-id="4865e74" data-element_type="widget" data-widget_type="pix-feature.default">
+				<div class="elementor-widget-container">
+					<div id="duo-icon-95222953" class="pix-feature-el text-custom "><div class="d-inline-block mw-100 text-body-default animate-in" data-anim-type="fade-in-up" data-anim-delay="50" style="width:54px;aspect-ratio:1/1 !important;position:relative;line-height:54px;text-align:center;"><span style="display:inline-block;font-size:30px;line-height:30px;"><svg width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs></defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <path d="M14.486222,18 L12.7974954,21.0565532 C12.530414,21.5399639 11.9220198,21.7153335 11.4386091,21.4482521 C11.2977127,21.3704077 11.1776907,21.2597005 11.0887419,21.1255379 L9.01653358,18 L5,18 C3.34314575,18 2,16.6568542 2,15 L2,6 C2,4.34314575 3.34314575,3 5,3 L19,3 C20.6568542,3 22,4.34314575 22,6 L22,15 C22,16.6568542 20.6568542,18 19,18 L14.486222,18 Z" fill="#000000" opacity="0.3"></path> <path d="M6,7 L15,7 C15.5522847,7 16,7.44771525 16,8 C16,8.55228475 15.5522847,9 15,9 L6,9 C5.44771525,9 5,8.55228475 5,8 C5,7.44771525 5.44771525,7 6,7 Z M6,11 L11,11 C11.5522847,11 12,11.4477153 12,12 C12,12.5522847 11.5522847,13 11,13 L6,13 C5.44771525,13 5,12.5522847 5,12 C5,11.4477153 5.44771525,11 6,11 Z" fill="#000000" opacity="0.3"></path> </g> </svg></span></div><h5 class="font-weight-bold    animate-in" style="padding-top:15px;color:#0E0E1E !important;" data-anim-type="fade-in-up" data-anim-delay="150">Check our Corporate News</h5><div class="text-body-default      animate-in" style="padding-top:3px;" data-anim-type="fade-in-up" data-anim-delay="250"></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e8a06fe elementor-widget__width-auto elementor-widget elementor-widget-pix-button" data-id="e8a06fe" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a  href="https://agiletv.com/corporate-news/" class="btn m-0     btn-primary d-inline-block     btn-rounded animate-in btn-normal"   data-anim-type="fade-in-up" data-anim-delay="150" ><span class="font-weight-bold " >Know more</span></a>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5a9ff4f" data-id="5a9ff4f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="pix-base-transition animate-in elementor-section elementor-inner-section elementor-element elementor-element-760d293 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-anim-type="pix-3d-down-in" data-anim-delay="600" data-id="760d293" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3a848d8" data-id="3a848d8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c976b43 elementor-invisible elementor-widget elementor-widget-pix-feature" data-id="c976b43" data-element_type="widget" data-widget_type="pix-feature.default">
+				<div class="elementor-widget-container">
+					<div id="duo-icon-38923126" class="pix-feature-el text-custom "><div class="d-inline-block mw-100 text-body-default animate-in" data-anim-type="fade-in-up" data-anim-delay="50" style="width:54px;aspect-ratio:1/1 !important;position:relative;line-height:54px;text-align:center;"><span style="display:inline-block;font-size:30px;line-height:30px;"><svg width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs></defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <path d="M11.914857,14.1427403 L14.1188827,11.9387145 C14.7276032,11.329994 14.8785122,10.4000511 14.4935235,9.63007378 L14.3686433,9.38031323 C13.9836546,8.61033591 14.1345636,7.680393 14.7432841,7.07167248 L17.4760882,4.33886839 C17.6713503,4.14360624 17.9879328,4.14360624 18.183195,4.33886839 C18.2211956,4.37686904 18.2528214,4.42074752 18.2768552,4.46881498 L19.3808309,6.67676638 C20.2253855,8.3658756 19.8943345,10.4059034 18.5589765,11.7412615 L12.560151,17.740087 C11.1066115,19.1936265 8.95659008,19.7011777 7.00646221,19.0511351 L4.5919826,18.2463085 C4.33001094,18.1589846 4.18843095,17.8758246 4.27575484,17.613853 C4.30030124,17.5402138 4.34165566,17.4733009 4.39654309,17.4184135 L7.04781491,14.7671417 C7.65653544,14.1584211 8.58647835,14.0075122 9.35645567,14.3925008 L9.60621621,14.5173811 C10.3761935,14.9023698 11.3061364,14.7514608 11.914857,14.1427403 Z" fill="#000000"></path> </g> </svg></span></div><h5 class="font-weight-bold    animate-in" style="padding-top:15px;color:#0E0E1E !important;" data-anim-type="fade-in-up" data-anim-delay="150">Contact our Team for more information</h5><div class="text-body-default      animate-in" style="padding-top:3px;" data-anim-type="fade-in-up" data-anim-delay="250"></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-517ae13 elementor-widget__width-auto elementor-widget elementor-widget-pix-button" data-id="517ae13" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a  href="https://agiletv.com/contact/" class="btn m-0     btn-primary d-inline-block     btn-rounded animate-in btn-normal"   data-anim-type="fade-in-up" data-anim-delay="150" ><span class="font-weight-bold " >Know more</span></a>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-678d633 elementor-widget elementor-widget-pix-button" data-id="678d633" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a  href="https://agiletv.com/" class="btn m-0     btn-primary d-inline-block     btn-rounded btn-md"     ><span class="font-weight-bold " >Explore AgileTV</span></a>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-324f3b9 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="324f3b9" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-12c11f2" data-id="12c11f2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5b611d0 elementor-widget elementor-widget-heading" data-id="5b611d0" data-element_type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Follow us on <span class="gradient">social media</span></h2>				</div>
+				<div class="elementor-element elementor-element-47de7db elementor-invisible elementor-widget elementor-widget-pix-social-icons" data-id="47de7db" data-element_type="widget" data-widget_type="pix-social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="text-gradient-primary text-center pix-social-icons font-weight-bold d-inline-block w-100 " style="font-size:48px;"><a target="_blank" href="https://twitter.com/agilecontents" aria-label="pixicon-x-twitter" class="text-gradient-primary animate-in d-inline-block fly-sm  px-3" data-anim-type="fade-in-right" data-anim-delay="400" rel="noopener"><i class="pixicon-x-twitter" style=""></i></a><a target="_blank" href="https://www.linkedin.com/company/agilecontent/" aria-label="pixicon-linkedin" class="text-gradient-primary animate-in d-inline-block fly-sm  px-3" data-anim-type="fade-in-right" data-anim-delay="500" rel="noopener"><i class="pixicon-linkedin" style=""></i></a><a href="https://www.youtube.com/channel/UCdToGRHQyrFWjesiO7Bk-7Q" aria-label="pixicon-youtube3" class="text-gradient-primary animate-in d-inline-block fly-sm  px-3" data-anim-type="fade-in-right" data-anim-delay="600" target="_blank" rel="noopener"><i class="pixicon-youtube3" style=""></i></a></div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		
+	</article><!-- #post-34890 -->        </main><!-- #main -->
+    </div><!-- #primary -->
+    </div>
+
+
+<footer  id="pix-page-footer" class="site-footer2  bg-white my-0 py-0" data-sticky-bg="" data-sticky-color="">
+		<!-- <div class="container-fluid px-0 mx-0 my-0 py-0"> -->
+	<!-- <div class="row my-0 py-0">
+			<div class="col-12 my-0 py-0"> -->
+			<div  data-elementor-type="wp-post" data-elementor-id="3368" class="elementor elementor-3368">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-2fd152f8 elementor-section-stretched elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default" data-id="2fd152f8" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2977b697" data-id="2977b697" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7e35ea4c elementor-invisible elementor-widget elementor-widget-pix-cta" data-id="7e35ea4c" data-element_type="widget" data-widget_type="pix-cta.default">
+				<div class="elementor-widget-container">
+					<div class="container"><div class="row justify-content-center"><div class="col bg-white2 rounded-lg2  animate-in w-100 m-32 p-42 pix-py-30 col-sm-auto d-md-flex align-items-center text-center text-sm-left justify-content-between2" style="z-index:11;" data-anim-delay="0" data-anim-type="fade-in-up"><div class="mr-md-5"><h4 class="d-block mr-md-3 mb-md-0 mb-md-0 text-white font-weight-bold text-white" style="">Are you looking to improve your customers' video experience?</h4><span class="d-block mr-md-3 mb-md-0 mb-md-0 pix-mt-10  text-18 text-light-opacity-8" style="">Let us help you create the new generation TV</span></div><div class="flex-fill mt-4 mt-sm-0 mt-md-0 text-md-right flex-grow-1" style="min-width:250px;max-width:100%;"><a href="https://agiletv.com/contact" class="btn mb-0     shadow shadow-hover-lg btn-primary d-inline-block     btn-rounded animate-in btn-md" data-anim-type="fade-in-up" data-anim-delay="0"><span class="font-weight-bold " >Contact Us</span></a></div></div></div></div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-34eef43d elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="34eef43d" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3356bfb7" data-id="3356bfb7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-62d2a59b elementor-widget elementor-widget-pix-img" data-id="62d2a59b" data-element_type="widget" data-widget_type="pix-img.default">
+				<div class="elementor-widget-container">
+					<div class="pix-img-div  text-center"><a href="https://agiletv.com/" class="pix-img-el    text-left d-inline-block  rounded-0" aria-label="Agile TV"><img decoding="async" class="pix-lazy2 card-img2 rounded-0 h-1002" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201992%20608'%3E%3C/svg%3E" data-lazy-srcset="https://agiletv.com/wp-content/uploads/2020/06/Agiletv-logo_color-white.png 1992w, https://agiletv.com/wp-content/uploads/2020/06/Agiletv-logo_color-white-300x92.png 300w, https://agiletv.com/wp-content/uploads/2020/06/Agiletv-logo_color-white-1024x313.png 1024w, https://agiletv.com/wp-content/uploads/2020/06/Agiletv-logo_color-white-768x234.png 768w, https://agiletv.com/wp-content/uploads/2020/06/Agiletv-logo_color-white-1536x469.png 1536w" width="1992" height="608" alt="Agile TV" style="height:auto;" data-lazy-src="https://agiletv.com/wp-content/uploads/2020/06/Agiletv-logo_color-white.png"/><noscript><img decoding="async" class="pix-lazy2 card-img2 rounded-0 h-1002" src="https://agiletv.com/wp-content/uploads/2020/06/Agiletv-logo_color-white.png" srcset="https://agiletv.com/wp-content/uploads/2020/06/Agiletv-logo_color-white.png 1992w, https://agiletv.com/wp-content/uploads/2020/06/Agiletv-logo_color-white-300x92.png 300w, https://agiletv.com/wp-content/uploads/2020/06/Agiletv-logo_color-white-1024x313.png 1024w, https://agiletv.com/wp-content/uploads/2020/06/Agiletv-logo_color-white-768x234.png 768w, https://agiletv.com/wp-content/uploads/2020/06/Agiletv-logo_color-white-1536x469.png 1536w" width="1992" height="608" alt="Agile TV" style="height:auto;"/></noscript></a></div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4e516c8" data-id="4e516c8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c39fab6 elementor-widget elementor-widget-pix-heading" data-id="c39fab6" data-element_type="widget" data-widget_type="pix-heading.default">
+				<div class="elementor-widget-container">
+					<div  class="pix-heading-el text-center "><div><div class="slide-in-container2"><h6 class="text-white heading-text el-title_custom_color mb-12" style="" data-anim-type="" data-anim-delay="">Subscribe to our news</h6></div></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-6d90f3d elementor-widget elementor-widget-html" data-id="6d90f3d" data-element_type="widget" id="newsletter" data-widget_type="html.default">
+					<script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    portalId: "139546511",
+    formId: "b6d92ae5-a6f1-4fde-bac8-4f4326d4207b"
+  });
+</script>				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-34e144d4 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="34e144d4" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-fd60ce2" data-id="fd60ce2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-52628dd5 elementor-widget elementor-widget-pix-heading" data-id="52628dd5" data-element_type="widget" data-widget_type="pix-heading.default">
+				<div class="elementor-widget-container">
+					<div  class="pix-heading-el text-center "><div><div class="slide-in-container2"><h6 class="text-gray-5 font-weight-bold heading-text el-title_custom_color mb-12" style="" data-anim-type="" data-anim-delay="">Company</h6></div></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-76d94db1 elementor-widget elementor-widget-pix-button" data-id="76d94db1" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a href="https://agiletv.com/about-us" class="btn m-0     text-body-default btn-underline-primary d-block w-100  no-padding text-center    animate-in btn-md" data-anim-type="fade-in" data-anim-delay="0"><span class="  text-body-default" >About</span></a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-106c34e elementor-widget elementor-widget-pix-button" data-id="106c34e" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a href="https://agiletv.com/management-team" class="btn m-0     text-body-default btn-underline-primary d-block w-100  no-padding text-center    animate-in btn-md" data-anim-type="fade-in" data-anim-delay="0"><span class="  text-body-default" >Management Team</span></a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-92f514d elementor-widget elementor-widget-pix-button" data-id="92f514d" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a href="https://agiletv.com/resources/" class="btn m-0     text-body-default btn-underline-primary d-block w-100  no-padding text-center    animate-in btn-md" data-anim-type="fade-in" data-anim-delay="0"><span class="  text-body-default" >Resources</span></a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-958d640 elementor-widget elementor-widget-pix-button" data-id="958d640" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a href="https://agiletv.com/certifications-assurance/" class="btn m-0     text-body-default btn-underline-primary d-block w-100  no-padding text-center    animate-in btn-md" data-anim-type="fade-in" data-anim-delay="0"><span class="  text-body-default" >Certifications & Assurance</span></a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-11c33c73 elementor-widget elementor-widget-pix-button" data-id="11c33c73" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a href="https://agiletv.com/careers" class="btn m-0     text-body-default btn-underline-primary d-block w-100  no-padding text-center    animate-in btn-md" data-anim-type="fade-in" data-anim-delay="0"><span class="  text-body-default" >Careers</span></a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-3480a07b elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-pix-button" data-id="3480a07b" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a  href="#" class="btn m-0     btn-underline-primary d-block w-100  no-padding text-center    animate-in btn-md"   data-anim-type="fade-in" data-anim-delay="0" ><span class="font-weight-bold " >We're hiring!</span></a>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-6b38af94" data-id="6b38af94" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-24224a65 elementor-widget elementor-widget-pix-heading" data-id="24224a65" data-element_type="widget" data-widget_type="pix-heading.default">
+				<div class="elementor-widget-container">
+					<div  class="pix-heading-el text-center "><div><div class="slide-in-container2"><h6 class="text-gray-5 font-weight-bold heading-text el-title_custom_color mb-12" style="" data-anim-type="" data-anim-delay="">Invest in Agile</h6></div></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-310a853 elementor-widget elementor-widget-pix-button" data-id="310a853" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a href="https://investors.agilecontent.com/" class="btn m-0     text-body-default btn-underline-primary d-block w-100  no-padding text-center    animate-in btn-md" data-anim-type="fade-in" data-anim-delay="0" target="_blank" rel="noopener"><span class="  text-body-default" >Investors</span></a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-594e807 elementor-widget elementor-widget-pix-button" data-id="594e807" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a href="https://agiletv.com/corporate-news" class="btn m-0     text-body-default btn-underline-primary d-block w-100  no-padding text-center    animate-in btn-md" data-anim-type="fade-in" data-anim-delay="0"><span class="  text-body-default" >Corporate News</span></a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-57e9bca0 elementor-widget elementor-widget-pix-button" data-id="57e9bca0" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a href="https://investors.agilecontent.com/atencion-al-inversor/" class="btn m-0     text-body-default btn-underline-primary d-block w-100  no-padding text-center    animate-in btn-md" data-anim-type="fade-in" data-anim-delay="0" target="_blank" rel="noopener"><span class="  text-body-default" >Contact us</span></a>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-44f50c4" data-id="44f50c4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ac269c6 elementor-widget elementor-widget-pix-heading" data-id="ac269c6" data-element_type="widget" data-widget_type="pix-heading.default">
+				<div class="elementor-widget-container">
+					<div  class="pix-heading-el text-center "><div><div class="slide-in-container2"><h6 class="text-gray-5 font-weight-bold heading-text el-title_custom_color mb-12" style="" data-anim-type="" data-anim-delay="">Legal Notice</h6></div></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-0665d46 elementor-widget elementor-widget-pix-button" data-id="0665d46" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a href="https://agiletv.com/terms-and-conditions" class="btn m-0     text-body-default btn-underline-primary d-block w-100  no-padding text-center    animate-in btn-md" data-anim-type="fade-in" data-anim-delay="0"><span class="  text-body-default" >Terms and Conditions</span></a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-22d73c2 elementor-widget elementor-widget-pix-button" data-id="22d73c2" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a href="https://agiletv.com/privacy-policy" class="btn m-0     text-body-default btn-underline-primary d-block w-100  no-padding text-center    animate-in btn-md" data-anim-type="fade-in" data-anim-delay="0"><span class="  text-body-default" >Privacy Policy</span></a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1c3c815 elementor-widget elementor-widget-pix-button" data-id="1c3c815" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a href="https://agiletv.com/research" class="btn m-0     text-body-default btn-underline-primary d-block w-100  no-padding text-center    animate-in btn-md" data-anim-type="fade-in" data-anim-delay="0"><span class="  text-body-default" >Research</span></a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e27c364 elementor-widget elementor-widget-pix-button" data-id="e27c364" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a href="https://agiletv.com/salary-transparency-report-brazil/" class="btn m-0     text-body-default btn-underline-primary d-block w-100  no-padding text-center    animate-in btn-md" data-anim-type="fade-in" data-anim-delay="0"><span class="  text-body-default" >Salary Transparency Report (Brazil)</span></a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-25103d5 elementor-widget elementor-widget-pix-button" data-id="25103d5" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a href="https://agiletv.com/wp-content/uploads/2025/04/IS01-Information-Security-Policy.pdf" class="btn m-0     text-body-default btn-underline-primary d-block w-100  no-padding text-center    animate-in btn-md" target="_blank" rel="noopener" data-anim-type="fade-in" data-anim-delay="0"><span class="  text-body-default" >Information Security Policy</span></a>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-91039ab" data-id="91039ab" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5850d73 elementor-widget elementor-widget-pix-button" data-id="5850d73" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a href="https://docs.agilecontent.com" class="btn m-0     text-gray-5 btn-underline-primary d-block w-100   text-center    animate-in btn-md" data-anim-type="fade-in" data-anim-delay="0" target="_blank" rel="noopener"><span class="font-weight-bold  text-gray-5" >Developers</span></a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-cbccc76 elementor-widget elementor-widget-pix-button" data-id="cbccc76" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a href="https://agiletv.com/blog" class="btn m-0     text-gray-5 btn-underline-primary d-block w-100   text-center    animate-in btn-md" data-anim-type="fade-in" data-anim-delay="0"><span class="font-weight-bold  text-gray-5" >Blog</span></a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5ebb272 elementor-widget elementor-widget-pix-button" data-id="5ebb272" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a href="https://agiletv.com/funding-research-projects/" class="btn m-0     text-gray-5 btn-underline-primary d-block w-100   text-center    animate-in btn-md" data-anim-type="fade-in" data-anim-delay="0"><span class="font-weight-bold  text-gray-5" >Funding  &  Research  Projects</span></a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-ca8198c elementor-widget elementor-widget-pix-button" data-id="ca8198c" data-element_type="widget" data-widget_type="pix-button.default">
+				<div class="elementor-widget-container">
+					<a href="https://agiletv.com/" class="btn m-0     text-gray-5 btn-underline-primary d-block w-100   text-center    animate-in btn-md" data-anim-type="fade-in" data-anim-delay="0"><span class="font-weight-bold  text-gray-5" >Agile TV</span></a>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4fa40b95 elementor-section-stretched elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4fa40b95" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6c6fb798" data-id="6c6fb798" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7d187880 elementor-widget__width-auto gradient elementor-invisible elementor-widget elementor-widget-pix-social-icons" data-id="7d187880" data-element_type="widget" data-widget_type="pix-social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="text-primary right pix-social-icons font-weight-bold d-inline-block w-100 " style="font-size:30px;"><a href="https://x.com/agiletvcom" aria-label="pixicon-x-twitter" class="text-primary animate-in d-inline-block 1  px-2" data-anim-type="fade-in-up" data-anim-delay="400"><i class="pixicon-x-twitter" style=""></i></a><a href="https://www.linkedin.com/company/agiletv" aria-label="pixicon-linkedin" class="text-primary animate-in d-inline-block 1  px-2" data-anim-type="fade-in-up" data-anim-delay="500" target="_blank" rel="noopener"><i class="pixicon-linkedin" style=""></i></a><a href="https://www.youtube.com/@agileTVcom" aria-label="pixicon-youtube3" class="text-primary animate-in d-inline-block 1  px-2" data-anim-type="fade-in-up" data-anim-delay="600" target="_blank" rel="noopener"><i class="pixicon-youtube3" style=""></i></a></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-55722e6f elementor-widget-mobile__width-auto elementor-invisible elementor-widget elementor-widget-pix-text" data-id="55722e6f" data-element_type="widget" data-widget_type="pix-text.default">
+				<div class="elementor-widget-container">
+					<div class="pix-el-text w-100 text-center " ><div class="d-inline-block" style="max-width:400px;"><p class=" resp-option  text-center " ><span class=" animate-in d-inline-block" data-anim-delay="200" data-anim-type="fade-in-up"> <strong>AgileTV</strong> © <span id="currentYear"></span>
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script> All rights reserved</span></p></div></div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+			<!-- </div>
+		</div> -->
+	</footer>
+
+</div><!-- #page -->
+
+<script type="rocketlazyloadscript">
+	var global = global || window;
+</script>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/essentials/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<svg class="shape-overlays d-none" viewBox="0 0 100 100" preserveAspectRatio="none"><defs><linearGradient id="search-overlay-color-1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%"   stop-color="#8784cb"/><stop offset="50%"   stop-color="#38b9b7"/><stop offset="100%"   stop-color="#2acc75"/></linearGradient><linearGradient id="search-overlay-color-2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%"   stop-color="#00622c"/><stop offset="100%"   stop-color="#1db954"/></linearGradient><linearGradient id="search-overlay-color-3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%"   stop-color="#ffffff"/><stop offset="100%"   stop-color="#ffffff"/></linearGradient><linearGradient id="search-overlay-color-4" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%"   stop-color="#7d8dff"/><stop offset="100%"   stop-color="#ff4f81"/></linearGradient></defs><path class="shape-overlays__path" d="" fill="url(#search-overlay-color-3)"></path><path class="shape-overlays__path" d="" fill="url(#search-overlay-color-2)"></path><path class="shape-overlays__path" d="" fill="url(#search-overlay-color-1)"></path></svg>		<div  class="pix-overlay d-none">
+			<div  class="">
+				<div  class="pix-search ">
+					<div class="container">
+						<div class="row d-flex justify-content-center">
+							<div class="col-12 col-md-12">
+								<div class="pix-overlay-item pix-overlay-item--style-6">
+									<a href="#" class="pix-search-close"><span class="screen-reader-text sr-only">Close</span><i class="text-white pixicon-close-circle"></i></a>
+									<div class="pb-0"><div class="search-title h1 heading-font display-2 text-gradient-primary2 text-white font-weight-bold">Search</div></div>
+								</div>
+								<div class="slide-in-container pb-2 pix-overlay-item pix-overlay-item--style-6"><p class="text-gray-3s text-20 mb-2 secondary-font search-note text-light-opacity-5">Hit enter to search or ESC to close</p></div>
+								<div class="search-bar pix-overlay-item pix-overlay-item--style-6">
+									<div class="search-content">
+										<form class="pix-search-form" method="get" action="https://agiletv.com/">
+
+
+											<div class="media pix-ajax-search-container">
+												<button class="pix-search-submit align-self-center" aria-label="search" type="submit"><i class="pixicon-search"></i></button>
+												<div class="media-body">
+													<label class="w-100 m-0">
+														<span class="screen-reader-text sr-only">Search for:</span>
+														<input value="" name="s" id="s" class="pix-search-input pix-ajax-search" type="search" autocomplete="off" placeholder="Search" data-search-link="https://agiletv.com/wp-admin/admin-ajax.php?action=pix_ajax_searcht&#038;nonce=1417470d61" />
+													</label>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+					<a href="#" class="shadow shadow-hover rounded-circle bg-gray-2 back_to_top default" title="Go to top"><i class="pixicon-angle-up"></i></a>
+			<div data-wpr-lazyrender="1" class="d-flex"><svg width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="svg-gradient-primary">
+          <stop offset="0%" stop-color="#8784cb" /><stop offset="50%" stop-color="#38b9b7" /><stop offset="100%" stop-color="#2acc75" />
+        </linearGradient>
+      </defs>
+    </svg></div>			<script type="rocketlazyloadscript">
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<style id='pix-header-menu-handle-inline-css' type='text/css'>
+#navbarNav-338938 > ul > li > .pix-nav-link.dropdown-toggle > span:before {
+                color: var(--text-body-default);
+            }.is-scroll #navbarNav-338938 > ul > li > .pix-nav-link.dropdown-toggle > span:before {
+                    color: var(--text-heading-default) !important;
+                }
+/*# sourceURL=pix-header-menu-handle-inline-css */
+</style>
+<link rel='stylesheet' id='elementor-post-3368-css' href='https://agiletv.com/wp-content/cache/background-css/1/agiletv.com/wp-content/uploads/elementor/css/post-3368.css?ver=1769690039&wpr_t=1769693928' type='text/css' media='all' />
+<link rel='stylesheet' id='pixfort-base-style-css' href='http://agiletv.com/wp-content/themes/essentials/css/base.min.css?ver=3.1.8' type='text/css' media='all' />
+
+
+<style id='pix-custom-css-inline-css' type='text/css'>
+ul{
+    list-style: disc;
+}
+/*pop-up nova identidade*/
+.home .pix-dialog-inner {
+    background: conic-gradient(#0E0E1E 0 0) padding-box, linear-gradient(120deg, #9f83cc, #7a85cb, #31a5cc, #3fcca3, #1db954) border-box;
+  border: 1px solid #0000;
+}
+
+.home .pix-dialog-container {
+    padding-bottom: 150px;
+}
+@media only screen and (max-width: 991px) {
+   .home .pix-dialog-container {
+    padding-bottom: 180px;
+} 
+}
+
+@media only screen and (max-width: 720px) {
+   .home .pix-dialog-container {
+    padding-bottom: 220px;
+} 
+}
+
+/*hide blog post author, comments, date*/
+/*agiletv check 27-01-2025*/
+.pix-post-meta-inner .pix-post-meta-author, .pix-post-meta-element .pix-post-meta-author, .pix-post-meta-element .pix-post-meta-comments, .category-events .pix-post-meta-element .pix-post-meta-date {
+    display: none !important;
+}
+
+/*Origin & Media Services Page - block hover*/
+/*agiletv check 27-01-2025*/
+.streaming-blocks .pix-p-30 {
+    padding: 0px !important;
+}
+.streaming-blocks .pix-img-scale {
+    top: 50%;
+    transform: scale(1) translateY(-50%);
+}
+
+/*margin between top bar and menu*/
+/*agiletv check 27-01-2025*/
+.pix-topbar .container-xl {
+    margin-bottom: 15px;
+}
+
+/*remove links from fancy boxes*/
+.elementor-widget-pix-fancybox a{
+    pointer-events: none;
+}
+
+/*contact form*/
+/*agiletv check 27-01-2025*/
+.page-id-19544 .elementor-element-598f4ea label {
+    color: #6c757d !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.8 !important;
+    text-align: left !important;
+    font-family: var(--pix-body-font), sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    text-rendering: optimizeLegibility !important;
+}
+.page-id-19544 .elementor-element-598f4ea input, .page-id-19544 .elementor-element-598f4ea textarea, .page-id-19544 .elementor-element-598f4ea select {
+    width: 100% !important;
+    border:none !important;
+    background-color: #f8f9fa !important;
+    display: block;
+    padding: 0.5625rem 1.125rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #495057;
+    background-clip: padding-box;
+    border: 0rem solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.page-id-19544 .elementor-element-598f4ea .field {
+ margin-bottom: 0.5rem !important;
+}
+.page-id-19544 .elementor-element-598f4ea .hs-button{
+    color: white !important;
+    background-color: #1db954 !important;
+    border-color: #1db954 !important;
+    box-shadow: none !important;
+    text-shadow: 0px !important;
+    font-weight: 700 !important;
+    padding: 0.75rem 2rem !important;
+    font-size: 1.125rem !important;
+    line-height: 1.5 !important;
+    border-radius: 0.3rem !important;
+    width: 100% !important;
+}
+
+/*inverstors page*/
+/*agiletv acho que pode ir. pus em comentário para ter a certeza 27-01-2025*/
+/*.d-md-flex {
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 10px 10px 10px 10px;
+}*/
+
+/*hide/show contact button on mobile*/
+/*agiletv check 27-01-2025*/
+@media (max-width: 900px) {
+    header .d-inline-flex {
+        display:none !important;
+        transition: 1s ease-out;
+        margin-top: 10px;
+    }
+    
+}
+
+/*webcast presentation*/
+/* https://agiletv.com/webcast-presentation/ */
+/*agiletv check 27-01-2025*/
+#mc_embed_signup {
+    width:auto;
+    max-width: 800px;
+    font-family: var(--pix-body-font), sans-serif ;
+}
+#mc_embed_signup .button {
+    background-color: #1db954; 
+    font-weight: 700;
+}
+
+/*move menu dropdown from right to left*/
+/*agiletv check 27-01-2025*/
+@media (min-width: 992px) {
+.navbar.navbar-hover-drop .dropdown:hover>.dropdown-menu .dropdown:hover>.dropdown-menu {        left: 0 !important;
+        transform: translateX(calc(-100%));
+        padding-right: 10px;
+    }
+}
+
+/*blog posts- add link to image*/
+/*agiletv check 27-01-2025*/
+.added-link {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+}
+
+/*gradient in text*/
+/*agiletv check 27-01-2025*/
+.gradient {
+        background: linear-gradient(90deg, #8784CB, #38B9B7, #2ACC75);
+        background: -webkit-linear-gradient(0deg, #8784CB, #38B9B7, #2ACC75);
+        background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transperent;
+    -webkit-text-fill-color: transparent;
+}
+
+/*Hubspot Newsletter footer */
+/*agiletv check 27-01-2025*/
+.hbspt-form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+    width: calc(100% - 20px);
+}
+.form-columns-3, .form-columns-2 {
+    max-width: none !important;
+    width: 100%;
+    display:flex;
+    column-gap: 10px;
+}
+.form-columns-3 .hs-form-field {
+    width: calc(100% / 3) !important;
+}
+
+.form-columns-2 .hs-form-field {
+    width: 50% !important;
+}
+
+.form-columns-2 .hs_company > label, .hs_country_select > label {
+    display: none;
+}
+#label-firstname-b6d92ae5-a6f1-4fde-bac8-4f4326d4207b, #label-lastname-b6d92ae5-a6f1-4fde-bac8-4f4326d4207b, #label-email-b6d92ae5-a6f1-4fde-bac8-4f4326d4207b{
+    display: none;
+}
+.hbspt-form .form-columns-3 .input, .hbspt-form .form-columns-2 .input {
+    margin-right: 0 !important;
+}
+#newsletter .form-columns-3 input, #newsletter .form-columns-2 input, #newsletter .form-columns-2 select {
+    background-color: #282836;
+    border: none;
+    border-radius: 2px;
+    line-height: 2;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    width:100%;
+    color: #fff;
+}
+
+#newsletter .form-columns-2 select {
+    padding: 8px 10px;
+}
+#newsletter .hbspt-form input::placeholder {
+  color: #ffffff99;
+}
+
+#newsletter .hbspt-form select:invalid {
+  color: #ffffff99;
+}
+
+#newsletter input:focus, #newsletter select:focus{
+ outline: none;
+ box-shadow: 0px 0px 5px 1px #c8c8d521;
+} 
+
+.hs-error-msg {
+    color: #ffffff99;
+    font-size: 0.8em;
+}
+.hs-form-booleancheckbox-display {
+    display: flex;
+    column-gap: 10px;
+    align-items: flex-start;
+}
+.hbspt-form .unputs-list {
+    padding-left: 0;
+}
+.hbspt-form ul {
+    padding: 0;
+}
+.inputs-list input{
+    margin-top: 4px;
+}
+.legal-consent-container .hs-form-booleancheckbox-display p {
+    font-size: 0.8em;
+}
+.legal-consent-container .hs-form-booleancheckbox-display>span {
+    line-height: 1.2;
+    margin-left: 0;
+}
+.hbspt-form .hs-button {
+    color: #fff;
+    border-radius: 25px;
+    background: conic-gradient(#0E0E1E 0 0) padding-box, linear-gradient(90deg, #3FCCA3, #1DB954) border-box;
+    border: 2px solid #0000;
+    padding: 3px 40px;
+}
+.hbspt-form .submitted-message {
+    color: #fff;
+}
+@media (max-width: 777px) {
+    .form-columns-3 {
+        row-gap: 20px;
+        flex-wrap: wrap;
+    }
+    .form-columns-3 .hs-form-field {
+        width: 100% !important;
+    }
+    .hs-submit {
+        margin:auto;
+    }
+}
+
+/*ESQUEMA CÓDIGO NOVO AGILETV 2025*/
+/*agiletv check 27-01-2025*/
+#scheme h6, #scheme p{
+    color: #fff;
+    text-align: center;
+}
+#scheme h6 {
+  font-weight: 600;
+  font-size: 25px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+#scheme p {
+  font-weight: 400;
+  margin: 0;
+}
+#scheme .gradient {
+  background: linear-gradient(90deg, #8784cb, #38b9b7, #2acc75);
+  background: -webkit-linear-gradient(0deg, #8784cb, #38b9b7, #2acc75);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transperent;
+  -webkit-text-fill-color: transparent;
+}
+#scheme .category {
+  background: #282836;
+  border-radius: 12px;
+  margin: 10px;
+  transition: 0.2s ease-in-out;
+  border: 1px solid #282836;
+}
+#scheme .category > a, #scheme-technologies {
+    padding: 30px;
+    display: block;
+}
+#scheme #scheme-technologies > a {
+    padding: 0;
+}
+#scheme #scheme-technologies h6 {
+    padding-bottom: 20px;
+}
+#scheme .category-hover:hover {
+  background: #28283620;
+  background: conic-gradient(#0e0e1e 0 0) padding-box,
+    linear-gradient(120deg, #9f83cc, #7a85cb, #31a5cc, #3fcca3, #1db954)
+      border-box;
+  border: 1px solid #0000;
+}
+#scheme .sub-category {
+  border-radius: 20px;
+  border: 1px solid #161625;
+  margin: 10px;
+  padding: 5px;
+  background-color: #161625;
+  transition: 0.2s ease-in-out;
+}
+#scheme .sub-category:hover {
+  background: conic-gradient(#0E0E1E 0 0) padding-box,
+    linear-gradient(120deg, #9f83cc, #7a85cb, #31a5cc, #3fcca3, #1db954)
+      border-box;
+  border: 1px solid #0000;
+}
+#scheme a:link {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 720px) {
+  #scheme {
+    display: grid;
+    grid-template-areas:
+      "technologies platform manager"
+      "services services services";
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  #scheme #scheme-technologies {
+    grid-area: technologies;
+  }
+  #scheme #scheme-platform {
+    grid-area: platform;
+  }
+  #scheme #scheme-manager {
+    grid-area: manager;
+  }
+  #scheme #scheme-services {
+    grid-area: services;
+  }
+  #scheme .category {
+    margin: 0;
+  }
+  #scheme #scheme-services a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #scheme #scheme-services h6 {
+    margin-bottom: 0;
+  }
+  #scheme #scheme-platform a, #scheme #scheme-manager a, #scheme #scheme-services a {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+  }
+}
+
+/*16/19/2025 - sugestão chat para melhoria de performance*/
+/* Force header/hero area height (tweak px to match your site) */
+.pix-header-box-part, .pix-main-part, .pix-header-container-area {
+  min-height: 70px; /* adjust to your header height */
+  transition: none !important; /* avoid animated changes on load */
+}
+
+/* Cookie banner fixed space so it doesn't push content */
+.cookieyes-banner, .cookie-consent, .cookieyes-banner-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 60px; /* match your actual banner height */
+  z-index: 99999;
+}
+/*# sourceURL=pix-custom-css-inline-css */
+</style>
+<script type="text/javascript" src="http://agiletv.com/wp-content/plugins/pixfort-core/functions/elementor/js/global-dividers.min.js?ver=3.1.8" id="pix-global-dividers-handle-js" data-rocket-defer defer></script>
+<script type="text/javascript" id="leadin-script-loader-js-js-extra">
+/* <![CDATA[ */
+var leadin_wordpress = {"userRole":"visitor","pageType":"page","leadinPluginVersion":"11.3.33"};
+//# sourceURL=leadin-script-loader-js-js-extra
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://js-eu1.hs-scripts.com/139546511.js?integration=WordPress&amp;ver=11.3.33" id="leadin-script-loader-js-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://agiletv.com","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket_lazyload_css-js-extra">
+/* <![CDATA[ */
+var rocket_lazyload_css_data = {"threshold":"300"};
+//# sourceURL=rocket_lazyload_css-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket_lazyload_css-js-after">
+/* <![CDATA[ */
+!function o(n,c,a){function u(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(s)return s(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return u(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var s="function"==typeof require&&require,e=0;e<a.length;e++)u(a[e]);return u}({1:[function(e,t,r){"use strict";{const c="undefined"==typeof rocket_pairs?[]:rocket_pairs,a=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var o=rocket_lazyload_css_data.threshold||300;const u=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&c.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,a.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{u.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:o+"px"});function n(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&c.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(u.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}n(),function(){const r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}}()(document.querySelector("body"),n)}},{}]},{},[1]);
+//# sourceURL=rocket_lazyload_css-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://agiletv.com/wp-content/themes/essentials/js/build/popper.min.js?ver=3.1.8" id="pix-popper-js-js" data-rocket-defer defer></script>
+<script type="text/javascript" src="http://agiletv.com/wp-content/themes/essentials/js/build/bootstrap.min.js?ver=3.1.8" id="pix-bootstrap-js-js" data-rocket-defer defer></script>
+<script type="text/javascript" src="http://agiletv.com/wp-content/themes/essentials/js/build/bootstrap-select.min.js?ver=3.1.8" id="pix-bootstrap-select-js-js" data-rocket-defer defer></script>
+<script type="text/javascript" src="http://agiletv.com/wp-content/themes/essentials/js/build/flickity.pkgd.min.js?ver=3.1.8" id="pix-flickity-js-js" data-rocket-defer defer></script>
+<script type="text/javascript" src="http://agiletv.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js" data-rocket-defer defer></script>
+<script type="text/javascript" id="pix-main-essentials-js-extra">
+/* <![CDATA[ */
+var pixfort_main_object = {"name":"mainVals","dataPopupBase":"https://agiletv.com/wp-admin/admin-ajax.php?action=pix_popup_content","dataPixOverlay":"pix-overlay-6","dataPopupCheckLink":"https://agiletv.com/wp-admin/admin-ajax.php?action=pix_check_popup_status&nonce=452b225fb1","lightboxUrl":"http://agiletv.com/wp-content/themes/essentials/js/build/jquery.fancybox.min.js","isotopeUrl":"http://agiletv.com/wp-content/themes/essentials/js/build/isotope.pkgd.min.js"};
+//# sourceURL=pix-main-essentials-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://agiletv.com/wp-content/themes/essentials/js/essentials.min.js?ver=3.1.8" id="pix-main-essentials-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="http://agiletv.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-consent-mode-bc2e26cfa69fcd4a8261.js" id="googlesitekit-consent-mode-js" data-rocket-defer defer></script>
+<script type="text/javascript" id="pix-main-pixfort-js-extra">
+/* <![CDATA[ */
+var PIX_JS_OPTIONS = {"ENABLE_NEW_POPUPS":"1","dataPopupBase":"https://agiletv.com/wp-admin/admin-ajax.php?action=pix_get_popup_content","dataPagePopupsBase":"https://agiletv.com/wp-admin/admin-ajax.php?action=pix_get_page_popups_content"};
+var PIX_POPUPS_OPTIONS = [];
+//# sourceURL=pix-main-pixfort-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://agiletv.com/wp-content/plugins/pixfort-core/dist/front/index.bundle.js?ver=3.1.8" id="pix-main-pixfort-js" data-rocket-defer defer></script>
+<script type="text/javascript" src="http://agiletv.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.34.1" id="elementor-webpack-runtime-js" data-rocket-defer defer></script>
+<script type="text/javascript" src="http://agiletv.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.34.1" id="elementor-frontend-modules-js" data-rocket-defer defer></script>
+<script type="text/javascript" id="elementor-frontend-js-before">
+/* <![CDATA[ */
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.34.1","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"nested-elements":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"e_interactions":true,"import-export-customization":true},"urls":{"assets":"http:\/\/agiletv.com\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/agiletv.com\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/agiletv.com\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"08d2b8e538"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"viewport_mobile":767,"viewport_tablet":1024,"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":34890,"title":"Fon%20Has%20Joined%20Agile%20TV%20-%20A%20New%20Chapter%20Begins%20-%20AgileTV","excerpt":"","featuredImage":"https:\/\/agiletv.com\/wp-content\/uploads\/2025\/03\/Agile-Fon-Thumbnail-1024x478.png"}};
+//# sourceURL=elementor-frontend-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://agiletv.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.34.1" id="elementor-frontend-js" data-rocket-defer defer></script>
+<script type="text/javascript" id="essentials-options-script-footer-js-after">
+/* <![CDATA[ */
+/*hide/show contact button on mobile*/
+document.querySelector(".hamburger-box").addEventListener("click", function() {
+    if (document.documentElement.classList.contains("is-active-menu")) {
+        document.querySelectorAll("header .d-inline-flex").forEach(function(el) {
+        el.setAttribute('style', 'display:none!important');
+        });
+    } else {
+        document.querySelectorAll("header .d-inline-flex").forEach(function(el) {
+        el.setAttribute('style', 'display:inline-flex!important');
+        });
+    }
+});
+
+function customInitOnLoad() {
+    
+    if (typeof jQuery !== 'undefined') {
+        console.log("loaded page");
+        jQuery(document).ready(function($) {
+
+          // Your jQuery code here
+            $(window).on("load", function () {
+                console.log("window loaded");
+                console.log("data should be working");
+            //add link to blog images
+              $("div.elementor-wmidget-pix-blog").each(function () {
+                var articles = $(this).find("article");
+            
+                articles.each(function () {
+                    var title =$(this).find("h4");
+                  var tag = $(title).find("a");
+                  var src = tag.attr("href");
+            
+                  $(this).wrap(function () {
+                    return '<a href="' + src + '"></a>';
+                  });
+                });
+              });
+            });
+        });
+        
+        $(document).ready(function () {
+          $(".cls-4").css("stroke-width", "20px");
+          $(".cls-4").css("stroke", "transparent");
+        });
+        
+        /*SVG product structure interaction*/
+       let animationInterval;
+        let currentIndex = 0;
+        
+        function handleHover(event) {
+          const $parentG = $(this);
+          const $link = $(this).parent("a");
+        
+          // Toggle classes based on event type
+          if (event.type === "mouseenter") {
+            if ($parentG.is("#products > a > g")) {
+              $parentG.addClass("active-title");
+              $("g[data-name='transparencia']").removeClass("transparency");
+              $("#transparencia").removeClass("transparency");
+              $parentG.find("g[data-name='transparencia']").addClass("transparency");
+              $parentG.find("#transparencia").addClass("transparency");
+              clearInterval(animationInterval); // Stop the animation
+            }
+          } else if (event.type === "mouseleave") {
+            if ($parentG.is("#products > a > g")) {
+              $parentG.removeClass("active-title");
+              $("g[data-name='transparencia']").removeClass("transparency");
+              $parentG.find("g[data-name='transparencia']").removeClass("transparency");
+              $parentG.find("#transparencia").removeClass("transparency");
+              highlightNextElement();
+              startAnimation(); // Resume the animation
+            }
+          }
+        }
+        
+        function highlightNextElement() {
+          const $elements = $("#products > a > g");
+        
+          // Move to the next element in reverse order
+          currentIndex--;
+          if (currentIndex < 0) {
+            currentIndex = $elements.length - 1;
+          }
+        
+          // Highlight the current element
+          $elements.removeClass("active-title");
+          $("g[data-name='transparencia']").removeClass("transparency");
+          $("#transparencia").removeClass("transparency");
+          $elements.eq(currentIndex).addClass("active-title");
+          $elements
+            .eq(currentIndex)
+            .find("g[data-name='transparencia']")
+            .addClass("transparency");
+          $elements.eq(currentIndex).find("#transparencia").addClass("transparency");
+        }
+        
+        function startAnimation() {
+          animationInterval = setInterval(() => {
+            highlightNextElement();
+          }, 2000); // Adjust the interval as needed
+        }
+        
+        $(document).ready(function () {
+          // Bind hover event handler
+          $("#products > a > g").hover(handleHover);
+          highlightNextElement();
+          // Start the initial animation
+          startAnimation();
+        });
+        
+        // Unbind hover event handler and clear interval when navigating away from the page
+        $(window).on("unload", function () {
+          $("#products > a > g").off("mouseenter mouseleave", handleHover);
+          clearInterval(animationInterval);
+        });
+        
+        $(document).ready(function () {
+          $(".product").on("click", function () {
+            var $clickedProduct = $(this);
+        
+            // Check if the clicked product's info is already visible
+            var isAlreadyOpen = $clickedProduct.find(".info").is(":visible");
+        
+            // Close all other elements
+            $(".product .info").slideUp();
+            $(".product .dropdown").removeClass("dropdown-active");
+            $(".product .linha").removeClass("oculto");
+        
+            // If the clicked product's info was already open, do nothing
+            if (!isAlreadyOpen) {
+              // Toggle the elements within the clicked product
+              $clickedProduct.find(".info").slideToggle();
+              $clickedProduct.find(".dropdown").toggleClass("dropdown-active");
+              $clickedProduct.find(".linha").toggleClass("oculto");
+            }
+          });
+        });
+
+    } else {
+      // jQuery is not loaded, handle the situation gracefully
+      console.error('jQuery is not loaded. Your code may not work as expected.');
+    }
+}
+
+// Attach the function to the window.onload event
+window.onload = customInitOnLoad;
+
+// Display thumbnail after video plays
+document.addEventListener("DOMContentLoaded", function () {
+    const wrappers = document.querySelectorAll(".pix-video");
+
+    wrappers.forEach(wrapper => {
+        const video = wrapper.querySelector("video");
+        if (!video) return;
+
+        video.addEventListener("ended", function () {
+            console.log("video finished");
+            wrapper.classList.remove("video-start");
+            wrapper.classList.remove("video-active");
+            video.currentTime = 0;
+            video.pause();
+        });
+    });
+});
+//# sourceURL=essentials-options-script-footer-js-after
+/* ]]> */
+</script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="http://agiletv.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi_webp/ID/hqdefault.webp" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi_webp/ID/hqdefault.webp" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="Play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi_webp/ID/hqdefault.webp'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script><script>(()=>{class RocketElementorPreload{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}t(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this.i(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach((t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this.o(t)}catch(t){}}))}o(t){const e=JSON.parse(t.dataset.settings),i=e.m||e.animation_delay||0,n=e[this.animationSettingKeys.find((t=>e[t]))];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let o=setTimeout((()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this.l(t,e)}),i);window.addEventListener("rocket-startLoading",(function(){clearTimeout(o)}))}i(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach((t=>{e.forEach((e=>{i.push(t+e)}))})),i}l(t,e){this.i().forEach((t=>delete e[t])),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorPreload;requestAnimationFrame(t.t.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorPreload.run)})();</script></body>
+
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1769690328 -->

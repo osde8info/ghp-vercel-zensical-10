@@ -1,0 +1,98 @@
+---
+title: "iOS 5 contains over 200 new features"
+date: 2011-10-29
+tags: 
+  - "ios"
+---
+
+apparently iOS 5 contains over 200 new features but i havent noticed any of them yet !
+
+- • Notifications
+- ◦ Swipe from the top of any screen to view notifications in one place with Notification Centre
+- ◦ New notifications appear briefly at the top of the screen
+- ◦ View notifications from lock screen
+- ◦ Slide the notification app icon to the right on the lock screen to go directly to the app
+- • iMessage
+- ◦ Send and receive unlimited text, photo and video messages with other iOS 5 users
+- ◦ Track messages with delivery and read receipts
+- ◦ Group messaging and secure encryption
+- ◦ Works over mobile networks and Wi-Fi\*
+- • Newsstand
+- ◦ Automatically organises magazine and newspaper subscriptions on Home Screen
+- ◦ Displays the cover of the latest issue
+- ◦ Background downloads of new issues
+- • Reminders for managing to-do lists
+- ◦ Syncs with iCloud, iCal and Outlook
+- ◦ Location-based reminders when you leave or arrive at a location for iPhone 4S and iPhone 4
+- • Built-in support for Twitter
+- ◦ Sign in once in Settings and tweet directly from Camera, Photos, Maps, Safari and YouTube
+- ◦ Add location to any tweet
+- ◦ View Twitter profile pictures and usernames in Contacts
+- • Camera improvements for devices with cameras
+- ◦ Double-click the Home button when device is asleep to bring up a camera shortcut on iPhone 4S, iPhone 4, iPhone 3GS and iPod touch (4th generation)
+- ◦ Volume Up button to take a picture
+- ◦ Optional grid lines to line up shots
+- ◦ Pinch to zoom in the preview screen
+- ◦ Swipe to camera roll from preview screen
+- ◦ Tap and hold to lock focus and exposure; iPad 2 and iPod touch (4th generation) only support exposure lock
+- • Photo improvements for devices with cameras
+- ◦ Crop and rotate
+- ◦ Red-eye removal
+- ◦ One-tap enhance
+- ◦ Organise photos into albums
+- • Mail improvements
+- ◦ Format text using bold, italic or underlined fonts
+- ◦ Indentation control
+- ◦ Drag to rearrange names in address fields
+- ◦ Flag messages
+- ◦ Mass mark messages as flagged, read or unread
+- ◦ Customise mail alert sounds
+- ◦ S/MIME
+- • Calendar improvements
+- ◦ Year view on iPad and new Week view for iPhone and iPod touch
+- ◦ Tap to create an event
+- ◦ View and add event attachments
+- • Game Center improvements
+- ◦ Use personal photos for your Game Center account
+- ◦ Compare your overall achievement scores with your friends
+- ◦ Find new Game Center friends with friend recommendations and friends of friends
+- ◦ Discover new games with custom game recommendations
+- • AirPlay Mirroring for iPad 2 and iPhone 4S
+- • Multitasking Gestures for iPad
+- ◦ Use four or five fingers to pinch to the Home Screen
+- ◦ Swipe up to reveal the multitasking bar
+- ◦ Swipe left or right to switch between apps
+- • On-device setup, activation and configuration with Setup Assistant
+- • Software updates available over the air without tethering
+- • iCloud support
+- ◦ iTunes in the Cloud
+- ◦ Photo Stream
+- ◦ Documents in the Cloud
+- ◦ Apps and Books automatic download and purchase history
+- ◦ Backup
+- ◦ Contacts, Calendar and Mail
+- ◦ Find My iPhone
+- • Redesigned Music app for iPad
+- • Hourly weather forecast
+- • Real-time stock quotes
+- • Wireless sync to iTunes
+- • Keyboard improvements
+- ◦ Split keyboard for iPad
+- ◦ Improved auto-correction accuracy
+- ◦ Improved Chinese and Japanese input
+- ◦ New Emoji keyboard
+- ◦ Personal dictionary for auto-correction
+- ◦ Optionally create keyboard shortcuts for frequently used words
+- • Accessibility improvements
+- ◦ Option to light LED flash on incoming calls and alerts for iPhone 4S and iPhone 4
+- ◦ Custom vibration patterns for incoming calls on iPhone
+- ◦ New interface for using iOS with mobility-impairment input devices
+- ◦ Option to speak a selection of text
+- ◦ Custom element labelling for VoiceOver
+- • Exchange ActiveSync improvements
+- ◦ Wirelessly sync tasks
+- ◦ Mark messages as flagged, read or unread
+- ◦ Improved offline support
+- ◦ Save a new contact from a GAL service
+- • More than 1,500 new developer APIs
+- • Bug fixes
