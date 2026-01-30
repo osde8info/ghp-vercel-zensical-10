@@ -6,3 +6,8 @@ site/
 # w2d
 export*.xml
 output/
+
+# vercel
+.env*.local
+.vercel
+.vercel_*
