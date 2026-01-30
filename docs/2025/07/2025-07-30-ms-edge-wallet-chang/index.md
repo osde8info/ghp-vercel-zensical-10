@@ -1,0 +1,10 @@
+---
+title: "ms edge wallet changes"
+date: 2025-07-30
+categories: 
+  - "osde"
+---
+
+ms edge wallet changes
+
+[https://support.microsoft.com/en-us/microsoft-edge/changes-to-wallet-in-microsoft-edge-bc52418a-4d35-444e-845c-e09df6033b81](https://support.microsoft.com/en-us/microsoft-edge/changes-to-wallet-in-microsoft-edge-bc52418a-4d35-444e-845c-e09df6033b81)
